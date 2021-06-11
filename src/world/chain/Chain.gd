@@ -5,18 +5,20 @@ var Joint = preload("res://src/world/chain/Joint.tscn")
 
 const points_density = 0.035 # number of items per pixel ? unit offset
 
-
-var points = PoolVector2Array([Vector2(0,0),Vector2(0,10),Vector2(2,40),Vector2(-2,100)])
+# initial path
+var points = PoolVector2Array([Vector2(0,0),Vector2(10,10),Vector2(20,40),Vector2(40,100)])
 
 func _ready():
-	build_cord();
+	build_chain();
 
 func _process(_delta):
+	# update Line2D with position of rigidbodies
 	for i in range(0, $Chain.get_child_count()):
 		$Line2D.set_point_position(i, $Chain.get_child(i).position)
 
 
-func build_cord():
+func build_chain():
+	# Build
 	var length = build_curve()
 	$Path2D/PathFollow2D.unit_offset = 0
 	var head_position = $Path2D/PathFollow2D.position
@@ -35,8 +37,6 @@ func build_cord():
 func addLoop(position):
 	var loop = Loop.instance()
 	loop.position = position
-	#loop.liana = self
-	#decorate(loop)
 	$Chain.add_child(loop)
 	return loop
 
@@ -54,12 +54,10 @@ func build_curve():
 	var length=0
 	var prev_point=null
 	for point in points:
-		print(point)
 		curve2D.add_point(point)
 		if prev_point:
 			length+= point.distance_to(prev_point)
 		prev_point=point
 	$Path2D.curve = curve2D
-	print(length)
 	return length
 
