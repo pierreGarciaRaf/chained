@@ -27,4 +27,5 @@ zoom = Vector2( 0.2, 0.2 )
 script = ExtResource( 3 )
 
 [node name="Node2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( -0.117985, 5.66325 )
 shadow_filter_smooth = 4.7
