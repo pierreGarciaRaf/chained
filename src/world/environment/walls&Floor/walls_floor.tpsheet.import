@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/walls_floor.tpsheet-a8e5934ae36b454aff9d31348e1be1e6.res"
+
+[deps]
+
+files=[ "res://src/world/environment/walls&Floor/walls_floor.sprites/wallU.tres", "res://src/world/environment/walls&Floor/walls_floor.sprites/wallL.tres", "res://src/world/environment/walls&Floor/walls_floor.sprites/wallD.tres", "res://src/world/environment/walls&Floor/walls_floor.sprites/wallR.tres" ]
+
+source_file="res://src/world/environment/walls&Floor/walls_floor.tpsheet"
+dest_files=[ "res://.import/walls_floor.tpsheet-a8e5934ae36b454aff9d31348e1be1e6.res", "res://src/world/environment/walls&Floor/walls_floor.sprites/wallU.tres", "res://src/world/environment/walls&Floor/walls_floor.sprites/wallL.tres", "res://src/world/environment/walls&Floor/walls_floor.sprites/wallD.tres", "res://src/world/environment/walls&Floor/walls_floor.sprites/wallR.tres" ]
+
+[params]
+
