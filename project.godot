@@ -24,6 +24,10 @@ config/name="Chained"
 run/main_scene="res://src/levels/testLevel.tscn"
 config/icon="res://icon.png"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/codeandweb.texturepacker/plugin.cfg" )
+
 [importer_defaults]
 
 texture={

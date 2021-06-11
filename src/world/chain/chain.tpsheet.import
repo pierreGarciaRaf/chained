@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/chain.tpsheet-1be8150fedda4a6135a1bf92a89d088d.res"
+
+[deps]
+
+files=[ "res://src/world/chain/chain.sprites/chainwhole.tres", "res://src/world/chain/chain.sprites/chainwide.tres", "res://src/world/chain/chain.sprites/chainthin.tres" ]
+
+source_file="res://src/world/chain/chain.tpsheet"
+dest_files=[ "res://.import/chain.tpsheet-1be8150fedda4a6135a1bf92a89d088d.res", "res://src/world/chain/chain.sprites/chainwhole.tres", "res://src/world/chain/chain.sprites/chainwide.tres", "res://src/world/chain/chain.sprites/chainthin.tres" ]
+
+[params]
+

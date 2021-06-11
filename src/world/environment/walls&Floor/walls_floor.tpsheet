@@ -1,0 +1,78 @@
+{
+	"textures": [
+		{
+			"image": "walls_floor.png",
+			"size": {
+				"w": 32,
+				"h": 20
+			},
+			"sprites": [
+				{
+					"filename": "wallU.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 16,
+						"h": 13
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 3
+					}
+				},
+				{
+					"filename": "wallL.png",
+					"region": {
+						"x": 19,
+						"y": 1,
+						"w": 5,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 11,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallD.png",
+					"region": {
+						"x": 1,
+						"y": 16,
+						"w": 16,
+						"h": 3
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 13
+					}
+				},
+				{
+					"filename": "wallR.png",
+					"region": {
+						"x": 26,
+						"y": 1,
+						"w": 5,
+						"h": 16
+					},
+					"margin": {
+						"x": 11,
+						"y": 0,
+						"w": 11,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:1a1155d698746b98d00a223733c6cfdf:2a52091b3939bcb975fbaf02f8a2b3cd:49cfb9cbece0afc2431ad95eac0d9f76$"
+	}
+}

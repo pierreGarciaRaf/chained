@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/player.tpsheet-2beeb14de89184ae342f1e7731f5a88d.res"
+
+[deps]
+
+files=[ "res://src/world/player/player.sprites/charBack/charbehind1.tres", "res://src/world/player/player.sprites/charBack/charbehind3.tres", "res://src/world/player/player.sprites/charBack/charbehind2.tres", "res://src/world/player/player.sprites/charBack/charbehind4.tres", "res://src/world/player/player.sprites/charFront/charfront1.tres", "res://src/world/player/player.sprites/charFront/charfront3.tres", "res://src/world/player/player.sprites/charFront/charfront2.tres", "res://src/world/player/player.sprites/charFront/charfront4.tres" ]
+
+source_file="res://src/world/player/player.tpsheet"
+dest_files=[ "res://.import/player.tpsheet-2beeb14de89184ae342f1e7731f5a88d.res", "res://src/world/player/player.sprites/charBack/charbehind1.tres", "res://src/world/player/player.sprites/charBack/charbehind3.tres", "res://src/world/player/player.sprites/charBack/charbehind2.tres", "res://src/world/player/player.sprites/charBack/charbehind4.tres", "res://src/world/player/player.sprites/charFront/charfront1.tres", "res://src/world/player/player.sprites/charFront/charfront3.tres", "res://src/world/player/player.sprites/charFront/charfront2.tres", "res://src/world/player/player.sprites/charFront/charfront4.tres" ]
+
+[params]
+
