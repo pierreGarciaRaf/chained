@@ -28,7 +28,6 @@ _global_script_class_icons={
 
 config/name="Chained"
 run/main_scene="res://src/levels/testLevel.tscn"
-boot_splash/image="res://src/levelSelector/header_itchio.png"
 config/icon="res://icon.png"
 
 [autoload]
