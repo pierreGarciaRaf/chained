@@ -6,9 +6,6 @@ func _ready():
 	add_state("idle")
 	call_deferred("set_state",states.idle)
 
-	
-
-
 
 
 func _enter_state(new_state,previous_state):

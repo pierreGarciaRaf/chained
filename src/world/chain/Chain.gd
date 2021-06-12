@@ -21,6 +21,11 @@ func _process(_delta):
 	# update Line2D with position of rigidbodies
 	for i in range(0, $Chain.get_child_count()):
 		$Line2D.set_point_position(i, $Chain.get_child(i).position)
+	if is_chain_tensed():
+#		print('ça tire', initial_length,' ',lengthOf($Line2D.points))
+		var chain_direction = $Chain.get_child(0).position.direction_to($Chain.get_child(1).position)	
+		var player_direction = monster.position.direction_to(player.position)
+		emit_signal("chain_is_tensed",chain_direction,player_direction)
 
 
 func build_chain():
@@ -33,7 +38,7 @@ func build_chain():
 	var count = max(1,round(points_density * length))
 	var unit_offset_step = 1.0/count
 	var parent = monster
-	for _loop_index in range (1+count):
+	for _loop_index in range (count):
 		var new_position = $Path2D/PathFollow2D.position - head_position
 		var child = addLoop(new_position)
 		addLink(parent, child)
@@ -69,3 +74,25 @@ func build_curve():
 	$Path2D.curve = curve2D
 	return length
 
+func lengthOf(points : PoolVector2Array):
+	var length=0
+	var prev_point=null
+	for point in points:
+		if prev_point:
+			length+= point.distance_to(prev_point)
+		prev_point=point
+	return length
+
+func get_loop(loopIndex):
+	return $Chain.get_child(loopIndex)
+
+func get_loop_normal(loopIndex):
+	if loopIndex > 1:
+		var nextLoopDir = $Chain.get_child(loopIndex).global_position - $Chain.get_child(loopIndex-1).global_position
+		return (nextLoopDir as Vector2).tangent().normalized()
+	else:
+		return Vector2.ZERO
+
+
+func has_loop(loopIndex):
+	return $Chain.get_child_count() > loopIndex and loopIndex >= 0
