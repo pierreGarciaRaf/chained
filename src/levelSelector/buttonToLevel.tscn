@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/levelSelector/buttonToLevel.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+[node name="buttonToLevel" type="Button"]
+margin_right = 124.0
+margin_bottom = 48.0
+custom_styles/disabled = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0.501961, 0.501961, 0.501961, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+disabled = true
+text = "Level 1"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="." to="." method="_on_buttonToLevel_pressed"]
