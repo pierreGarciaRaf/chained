@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/world/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/world/monster/monster.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/world/environment/torch/generalLight.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/world/environment/walls&Floor/groundPlaceHolderTileset.tres" type="TileSet" id=5]
 
 [node name="Node2D" type="Node2D"]
@@ -29,3 +30,15 @@ color = Color( 0, 0, 0, 1 )
 [node name="monster" parent="." instance=ExtResource( 2 )]
 position = Vector2( 82.9075, 177.459 )
 playerPath = NodePath("../player")
+
+[node name="generalLight" parent="." instance=ExtResource( 3 )]
+position = Vector2( 101.709, 167.689 )
+
+[node name="generalLight2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 236.683, 206.388 )
+
+[node name="generalLight3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 280.101, 131.822 )
+
+[node name="generalLight4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 113.036, 348.801 )

@@ -15,7 +15,8 @@ var monster:KinematicBody2D
 
 signal chain_is_tensed(direction,player_direction)
 
-var initial_length
+var initial_length = 5000000
+var tenseRatio = 1.5
 
 func _ready():
 	self.position = points[0]
@@ -25,12 +26,14 @@ func _process(_delta):
 	# update Line2D with position of rigidbodies
 	for i in range(0, $Chain.get_child_count()):
 		$Line2D.set_point_position(i, $Chain.get_child(i).position)
-	var current_length = lengthOf($Line2D.points)
-	if current_length/initial_length > 1.2:
-		print('ça tire', initial_length,' ',current_length)
+	if is_chain_tensed():
+		print('ça tire', initial_length,' ',lengthOf($Line2D.points))
 		var chain_direction = $Chain.get_child(0).position.direction_to($Chain.get_child(1).position)	
 		var player_direction = monster.position.direction_to(player.position)
 		emit_signal("chain_is_tensed",chain_direction,player_direction)
+
+func is_chain_tensed():
+	return lengthOf($Line2D.points)/initial_length > tenseRatio
 
 func build_chain():
 	print("build")
@@ -87,3 +90,8 @@ func lengthOf(points : PoolVector2Array):
 			length+= point.distance_to(prev_point)
 		prev_point=point
 	return length
+
+func get_link(linkIndex):
+	return $Chain.get_child(linkIndex)
+func has_link(linkIndex):
+	return $Chain.get_child_count() > linkIndex and linkIndex >= 0

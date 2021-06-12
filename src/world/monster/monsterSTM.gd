@@ -12,14 +12,20 @@ func _ready():
 func _enter_state(new_state,previous_state):
 	if new_state != previous_state and previous_state != null:
 		print(previous_state," -> ", new_state)
+		match new_state:
+			states.getting_up_the_chain:
+				parent.timeIChangedLink = 2
+				parent.target_pos = parent.position
+
 
 func _get_transition(_delta):
-
-	if Input.is_action_pressed("ui_accept"):
-		print("ui accept")
-		return states.getting_up_the_chain
-	elif Input.is_action_pressed("ui_cancel"):
-		return states.idle
+	match state:
+		states.idle:
+			if parent.isChainTensed():
+				return states.getting_up_the_chain
+		states.getting_up_the_chain:
+			if Input.is_action_just_pressed("ui_cancel") or parent.isChainFinished():
+				return states.idle
 
 
 func _state_logic(delta):
