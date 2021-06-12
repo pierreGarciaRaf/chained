@@ -3,14 +3,29 @@
 		{
 			"image": "walls_floor.png",
 			"size": {
-				"w": 18,
-				"h": 232
+				"w": 118,
+				"h": 85
 			},
 			"sprites": [
 				{
-					"filename": "wallDL.png",
+					"filename": "tileset.png",
 					"region": {
 						"x": 1,
+						"y": 1,
+						"w": 80,
+						"h": 65
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 15
+					}
+				},
+				{
+					"filename": "wallDL.png",
+					"region": {
+						"x": 83,
 						"y": 1,
 						"w": 16,
 						"h": 16
@@ -25,7 +40,7 @@
 				{
 					"filename": "wallDR.png",
 					"region": {
-						"x": 1,
+						"x": 83,
 						"y": 19,
 						"w": 16,
 						"h": 16
@@ -40,7 +55,7 @@
 				{
 					"filename": "wallFace.png",
 					"region": {
-						"x": 1,
+						"x": 83,
 						"y": 37,
 						"w": 16,
 						"h": 16
@@ -55,7 +70,7 @@
 				{
 					"filename": "wallFaceBoth.png",
 					"region": {
-						"x": 1,
+						"x": 83,
 						"y": 55,
 						"w": 16,
 						"h": 16
@@ -71,7 +86,7 @@
 					"filename": "wallFaceL.png",
 					"region": {
 						"x": 1,
-						"y": 73,
+						"y": 68,
 						"w": 16,
 						"h": 16
 					},
@@ -85,8 +100,8 @@
 				{
 					"filename": "wallFaceR.png",
 					"region": {
-						"x": 1,
-						"y": 91,
+						"x": 19,
+						"y": 68,
 						"w": 16,
 						"h": 16
 					},
@@ -100,8 +115,8 @@
 				{
 					"filename": "wallLR.png",
 					"region": {
-						"x": 1,
-						"y": 109,
+						"x": 37,
+						"y": 68,
 						"w": 16,
 						"h": 16
 					},
@@ -115,8 +130,8 @@
 				{
 					"filename": "wallUL.png",
 					"region": {
-						"x": 1,
-						"y": 127,
+						"x": 55,
+						"y": 68,
 						"w": 16,
 						"h": 16
 					},
@@ -125,103 +140,13 @@
 						"y": 0,
 						"w": 0,
 						"h": 0
-					}
-				},
-				{
-					"filename": "wallULR.png",
-					"region": {
-						"x": 1,
-						"y": 145,
-						"w": 16,
-						"h": 16
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "wallUR.png",
-					"region": {
-						"x": 1,
-						"y": 163,
-						"w": 16,
-						"h": 16
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 0
-					}
-				},
-				{
-					"filename": "wallD.png",
-					"region": {
-						"x": 1,
-						"y": 181,
-						"w": 16,
-						"h": 3
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 13
-					}
-				},
-				{
-					"filename": "wallU.png",
-					"region": {
-						"x": 1,
-						"y": 186,
-						"w": 16,
-						"h": 2
-					},
-					"margin": {
-						"x": 0,
-						"y": 0,
-						"w": 0,
-						"h": 14
-					}
-				},
-				{
-					"filename": "veg2.png",
-					"region": {
-						"x": 1,
-						"y": 190,
-						"w": 13,
-						"h": 9
-					},
-					"margin": {
-						"x": 2,
-						"y": 4,
-						"w": 3,
-						"h": 7
-					}
-				},
-				{
-					"filename": "veg1.png",
-					"region": {
-						"x": 1,
-						"y": 201,
-						"w": 12,
-						"h": 12
-					},
-					"margin": {
-						"x": 1,
-						"y": 2,
-						"w": 4,
-						"h": 4
 					}
 				},
 				{
 					"filename": "wallL.png",
 					"region": {
-						"x": 15,
-						"y": 201,
+						"x": 73,
+						"y": 68,
 						"w": 2,
 						"h": 16
 					},
@@ -235,8 +160,8 @@
 				{
 					"filename": "wallR.png",
 					"region": {
-						"x": 1,
-						"y": 215,
+						"x": 77,
+						"y": 68,
 						"w": 2,
 						"h": 16
 					},
@@ -246,6 +171,81 @@
 						"w": 14,
 						"h": 0
 					}
+				},
+				{
+					"filename": "wallU.png",
+					"region": {
+						"x": 81,
+						"y": 73,
+						"w": 16,
+						"h": 2
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 14
+					}
+				},
+				{
+					"filename": "veg2.png",
+					"region": {
+						"x": 99,
+						"y": 73,
+						"w": 13,
+						"h": 9
+					},
+					"margin": {
+						"x": 2,
+						"y": 4,
+						"w": 3,
+						"h": 7
+					}
+				},
+				{
+					"filename": "wallULR.png",
+					"region": {
+						"x": 101,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallUR.png",
+					"region": {
+						"x": 101,
+						"y": 19,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "veg1.png",
+					"region": {
+						"x": 101,
+						"y": 37,
+						"w": 12,
+						"h": 12
+					},
+					"margin": {
+						"x": 1,
+						"y": 2,
+						"w": 4,
+						"h": 4
+					}
 				}
 			]
 		}
@@ -253,6 +253,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:0507b40d91d7392c201db5686566d373:04a401cf0cb831aacbd5ee612ac67b8f:49cfb9cbece0afc2431ad95eac0d9f76$"
+		"smartupdate": "$TexturePacker:SmartUpdate:6c34205145ff147e9f08ea9e8eebbe02:c454113c5ed96ebd70af16f74200d3a8:49cfb9cbece0afc2431ad95eac0d9f76$"
 	}
 }

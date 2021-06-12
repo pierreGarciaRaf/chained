@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/chick.tpsheet-ffed594d43dff674aebb3d6764c06666.res"
+
+[deps]
+
+files=[ "res://src/world/chick/chick.sprites/chick2.tres", "res://src/world/chick/chick.sprites/chick4.tres", "res://src/world/chick/chick.sprites/chick1.tres", "res://src/world/chick/chick.sprites/chick3.tres" ]
+
+source_file="res://src/world/chick/chick.tpsheet"
+dest_files=[ "res://.import/chick.tpsheet-ffed594d43dff674aebb3d6764c06666.res", "res://src/world/chick/chick.sprites/chick2.tres", "res://src/world/chick/chick.sprites/chick4.tres", "res://src/world/chick/chick.sprites/chick1.tres", "res://src/world/chick/chick.sprites/chick3.tres" ]
+
+[params]
+

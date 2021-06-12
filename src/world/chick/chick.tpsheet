@@ -1,0 +1,78 @@
+{
+	"textures": [
+		{
+			"image": "chick.png",
+			"size": {
+				"w": 12,
+				"h": 32
+			},
+			"sprites": [
+				{
+					"filename": "chick2.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 10,
+						"h": 9
+					},
+					"margin": {
+						"x": 3,
+						"y": 7,
+						"w": 6,
+						"h": 7
+					}
+				},
+				{
+					"filename": "chick4.png",
+					"region": {
+						"x": 1,
+						"y": 12,
+						"w": 10,
+						"h": 9
+					},
+					"margin": {
+						"x": 3,
+						"y": 7,
+						"w": 6,
+						"h": 7
+					}
+				},
+				{
+					"filename": "chick1.png",
+					"region": {
+						"x": 1,
+						"y": 23,
+						"w": 10,
+						"h": 8
+					},
+					"margin": {
+						"x": 3,
+						"y": 8,
+						"w": 6,
+						"h": 8
+					}
+				},
+				{
+					"filename": "chick3.png",
+					"region": {
+						"x": 1,
+						"y": 23,
+						"w": 10,
+						"h": 8
+					},
+					"margin": {
+						"x": 3,
+						"y": 8,
+						"w": 6,
+						"h": 8
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:189e2ab5ac9743ac7b32cf49dc9d7060:cfaf8f0c2d58b24ed2cf5cce5902b012:1c4bb76eeecc362ce43266554565d51f$"
+	}
+}

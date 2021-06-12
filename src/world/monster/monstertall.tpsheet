@@ -1,0 +1,333 @@
+{
+	"textures": [
+		{
+			"image": "monstertall.png",
+			"size": {
+				"w": 54,
+				"h": 204
+			},
+			"sprites": [
+				{
+					"filename": "monstertallback2.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallback4.png",
+					"region": {
+						"x": 1,
+						"y": 35,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallback_tensed1.png",
+					"region": {
+						"x": 1,
+						"y": 69,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallback_tensed2.png",
+					"region": {
+						"x": 1,
+						"y": 103,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallback_tensed3.png",
+					"region": {
+						"x": 1,
+						"y": 137,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallback_tensed4.png",
+					"region": {
+						"x": 1,
+						"y": 171,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallfront2.png",
+					"region": {
+						"x": 19,
+						"y": 1,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallfront4.png",
+					"region": {
+						"x": 19,
+						"y": 35,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallfront_tensed1.png",
+					"region": {
+						"x": 19,
+						"y": 69,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallfront_tensed2.png",
+					"region": {
+						"x": 19,
+						"y": 103,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallfront_tensed3.png",
+					"region": {
+						"x": 19,
+						"y": 137,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertallfront_tensed4.png",
+					"region": {
+						"x": 19,
+						"y": 171,
+						"w": 16,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monstertall_jump2_(100ms).png",
+					"region": {
+						"x": 37,
+						"y": 1,
+						"w": 16,
+						"h": 31
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 1
+					}
+				},
+				{
+					"filename": "monstertallback1.png",
+					"region": {
+						"x": 37,
+						"y": 34,
+						"w": 16,
+						"h": 31
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 1
+					}
+				},
+				{
+					"filename": "monstertallback3.png",
+					"region": {
+						"x": 37,
+						"y": 34,
+						"w": 16,
+						"h": 31
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 1
+					}
+				},
+				{
+					"filename": "monstertallfront1.png",
+					"region": {
+						"x": 37,
+						"y": 67,
+						"w": 16,
+						"h": 31
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 1
+					}
+				},
+				{
+					"filename": "monstertallfront3.png",
+					"region": {
+						"x": 37,
+						"y": 67,
+						"w": 16,
+						"h": 31
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 1
+					}
+				},
+				{
+					"filename": "monstertall_jump4_(100ms).png",
+					"region": {
+						"x": 37,
+						"y": 100,
+						"w": 16,
+						"h": 29
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 3
+					}
+				},
+				{
+					"filename": "monstertall_jump1_(300ms).png",
+					"region": {
+						"x": 37,
+						"y": 131,
+						"w": 16,
+						"h": 25
+					},
+					"margin": {
+						"x": 0,
+						"y": 7,
+						"w": 0,
+						"h": 7
+					}
+				},
+				{
+					"filename": "monstertall_jump5_(300ms).png",
+					"region": {
+						"x": 37,
+						"y": 158,
+						"w": 16,
+						"h": 22
+					},
+					"margin": {
+						"x": 0,
+						"y": 9,
+						"w": 0,
+						"h": 10
+					}
+				},
+				{
+					"filename": "monstertall_jump3_(300ms).png",
+					"region": {
+						"x": 37,
+						"y": 182,
+						"w": 16,
+						"h": 21
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 11
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:f89de3ad9529ab8cc0752d29a948aae0:97ea4bca8f32a07c13c24f55f8ae3316:1d77d6b0a5bd91acee1077b6a21d03a6$"
+	}
+}
