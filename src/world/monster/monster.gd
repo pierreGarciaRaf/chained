@@ -21,7 +21,8 @@ export var speed = 110
 var chainFollowShower
 
 func _applyVelocity():
-	velocity = self.move_and_slide(velocity)
+	pass
+	#velocity = self.move_and_slide(velocity)
 
 func get_up_the_chain():
 	if has_to_change_target_link_pos():
@@ -63,7 +64,20 @@ func build_chain_to_player():
 func isChainTensed():
 	return chain.is_chain_tensed()
 
-
+var move_direction=Vector2.ZERO
+#var move_position=Vector2.ZERO
+var distance=0
+func move_to_global_position(g_position):
+	distance = self.global_position.distance_to(g_position)
+	move_direction = +self.global_position.direction_to(g_position)
+	#move_position=to_local(g_position)
 
 func isChainFinished():
 	return not chain.has_link(timeIChangedLink)
+
+func zozo(delta):
+	if move_direction:
+		print(move_direction,distance, ' ',delta)
+		print(move_direction.length(),'<- move dir l, multiplied move dir -> ', move_direction * distance/delta)
+		move_and_slide(move_direction * distance/delta)
+		move_direction = Vector2.ZERO
