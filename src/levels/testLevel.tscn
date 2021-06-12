@@ -14,8 +14,8 @@ tileMapPath = NodePath("Navigation2D/TileMap")
 [node name="Polygon2D" type="Polygon2D" parent="."]
 position = Vector2( -243.813, -190.305 )
 scale = Vector2( 2.00745, 5.0675 )
-color = Color( 0.568627, 0.568627, 0.568627, 1 )
-polygon = PoolVector2Array( 0, 0, 400, 0, 400, 400, 0, 400 )
+color = Color( 0.0627451, 0.109804, 0.129412, 1 )
+polygon = PoolVector2Array( -2048, -2048, 400, 0, 400, 400, 0, 400 )
 
 [node name="Navigation2D" type="Navigation2D" parent="."]
 
@@ -35,7 +35,7 @@ position = Vector2( -256.21, -0.385815 )
 color = Color( 0.168627, 0.168627, 0.168627, 1 )
 
 [node name="monster" parent="." instance=ExtResource( 2 )]
-position = Vector2( 133.806, 339.567 )
+position = Vector2( 144.75, 331.148 )
 collision_layer = 4
 collision_mask = 6
 playerPath = NodePath("../player")

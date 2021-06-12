@@ -60,7 +60,7 @@ zoom = Vector2( 0.5, 0.5 )
 script = ExtResource( 3 )
 
 [node name="Light" parent="." instance=ExtResource( 4 )]
-position = Vector2( -0.117985, 5.66325 )
+position = Vector2( 0.302463, -0.117912 )
 shadow_filter_smooth = 4.7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
