@@ -24,3 +24,9 @@ width = 16.0
 texture = ExtResource( 1 )
 texture_mode = 1
 joint_mode = 2
+
+[node name="Timer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

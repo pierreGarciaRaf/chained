@@ -29,9 +29,10 @@ func _get_transition(_delta):
 
 
 func _state_logic(delta):
-	match state:
-		states.idle:
-			parent.idle()
-		states.getting_up_the_chain:
-			parent.get_up_the_chain()
-	parent._applyVelocity()
+	parent.zozo(delta)
+#	match state:
+#		states.idle:
+#			parent.idle()
+#		states.getting_up_the_chain:
+#			parent.get_up_the_chain()
+#	parent._applyVelocity()
