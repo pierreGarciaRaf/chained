@@ -13,6 +13,11 @@ var points:PoolVector2Array
 var player:KinematicBody2D
 var monster:KinematicBody2D
 
+signal chain_is_tensed(direction,player_direction)
+
+var initial_length = 5000000
+var tenseRatio = 1.5
+
 func _ready():
 	self.position = points[0]
 	build_chain()
@@ -27,6 +32,8 @@ func _process(_delta):
 		var player_direction = monster.position.direction_to(player.position)
 		emit_signal("chain_is_tensed",chain_direction,player_direction)
 
+func is_chain_tensed():
+	return lengthOf($Line2D.points)/initial_length > tenseRatio
 
 func build_chain():
 	print("build")
@@ -46,6 +53,7 @@ func build_chain():
 		$Line2D.add_point(new_position)
 		$Path2D/PathFollow2D.unit_offset += unit_offset_step
 	addLink(parent,player)
+	initial_length=lengthOf($Line2D.points)
 
 func addLoop(position):
 	var loop = Loop.instance()

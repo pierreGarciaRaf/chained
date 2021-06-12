@@ -3,37 +3,157 @@
 		{
 			"image": "walls_floor.png",
 			"size": {
-				"w": 32,
-				"h": 20
+				"w": 18,
+				"h": 232
 			},
 			"sprites": [
 				{
-					"filename": "wallU.png",
+					"filename": "wallDL.png",
 					"region": {
 						"x": 1,
 						"y": 1,
 						"w": 16,
-						"h": 13
-					},
-					"margin": {
-						"x": 0,
-						"y": 2,
-						"w": 0,
-						"h": 3
-					}
-				},
-				{
-					"filename": "wallL.png",
-					"region": {
-						"x": 19,
-						"y": 1,
-						"w": 5,
 						"h": 16
 					},
 					"margin": {
 						"x": 0,
 						"y": 0,
-						"w": 11,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallDR.png",
+					"region": {
+						"x": 1,
+						"y": 19,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallFace.png",
+					"region": {
+						"x": 1,
+						"y": 37,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallFaceBoth.png",
+					"region": {
+						"x": 1,
+						"y": 55,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallFaceL.png",
+					"region": {
+						"x": 1,
+						"y": 73,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallFaceR.png",
+					"region": {
+						"x": 1,
+						"y": 91,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallLR.png",
+					"region": {
+						"x": 1,
+						"y": 109,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallUL.png",
+					"region": {
+						"x": 1,
+						"y": 127,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallULR.png",
+					"region": {
+						"x": 1,
+						"y": 145,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallUR.png",
+					"region": {
+						"x": 1,
+						"y": 163,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
 						"h": 0
 					}
 				},
@@ -41,7 +161,7 @@
 					"filename": "wallD.png",
 					"region": {
 						"x": 1,
-						"y": 16,
+						"y": 181,
 						"w": 16,
 						"h": 3
 					},
@@ -53,17 +173,77 @@
 					}
 				},
 				{
-					"filename": "wallR.png",
+					"filename": "wallU.png",
 					"region": {
-						"x": 26,
-						"y": 1,
-						"w": 5,
+						"x": 1,
+						"y": 186,
+						"w": 16,
+						"h": 2
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 14
+					}
+				},
+				{
+					"filename": "veg2.png",
+					"region": {
+						"x": 1,
+						"y": 190,
+						"w": 13,
+						"h": 9
+					},
+					"margin": {
+						"x": 2,
+						"y": 4,
+						"w": 3,
+						"h": 7
+					}
+				},
+				{
+					"filename": "veg1.png",
+					"region": {
+						"x": 1,
+						"y": 201,
+						"w": 12,
+						"h": 12
+					},
+					"margin": {
+						"x": 1,
+						"y": 2,
+						"w": 4,
+						"h": 4
+					}
+				},
+				{
+					"filename": "wallL.png",
+					"region": {
+						"x": 15,
+						"y": 201,
+						"w": 2,
 						"h": 16
 					},
 					"margin": {
-						"x": 11,
+						"x": 0,
 						"y": 0,
-						"w": 11,
+						"w": 14,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wallR.png",
+					"region": {
+						"x": 1,
+						"y": 215,
+						"w": 2,
+						"h": 16
+					},
+					"margin": {
+						"x": 14,
+						"y": 0,
+						"w": 14,
 						"h": 0
 					}
 				}
@@ -73,6 +253,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:1a1155d698746b98d00a223733c6cfdf:2a52091b3939bcb975fbaf02f8a2b3cd:49cfb9cbece0afc2431ad95eac0d9f76$"
+		"smartupdate": "$TexturePacker:SmartUpdate:0507b40d91d7392c201db5686566d373:04a401cf0cb831aacbd5ee612ac67b8f:49cfb9cbece0afc2431ad95eac0d9f76$"
 	}
 }

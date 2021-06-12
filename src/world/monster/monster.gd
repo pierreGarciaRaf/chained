@@ -15,6 +15,7 @@ var pathToFollow : PoolVector2Array
 var pathPointIndex = 0
 
 var timeIChangedLink = 0 #for debug
+onready var lightRes = preload("res://src/world/environment/torch/generalLight.tscn")
 
 onready var chainRes = preload("res://src/world/chain/Chain.tscn")
 
@@ -39,7 +40,7 @@ func _applyVelocity():
 
 
 func get_up_the_chain():
-	if has_to_change_target_link():
+	if has_to_change_target_link_pos():
 		timeIChangedLink += 1
 		print(timeIChangedLink)
 		if not isChainFinished():
@@ -79,12 +80,15 @@ func has_to_change_target_link_pos():
 	return (target_pos - self.position).length() < requiredDistance
 
 
-func next_link():
-	return chain
 
 func idle():
 	velocity = Vector2.ZERO
 
+func _ready():
+	chainFollowShower = lightRes.instance()
+	get_parent().call_deferred("add_child",chainFollowShower)
+	player = get_node(playerPath)
+	build_chain_to_player()
 
 
 func build_chain_to_player(navigation2D : Navigation2D):

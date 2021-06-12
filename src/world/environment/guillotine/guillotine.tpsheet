@@ -1,0 +1,48 @@
+{
+	"textures": [
+		{
+			"image": "guillotine.png",
+			"size": {
+				"w": 18,
+				"h": 68
+			},
+			"sprites": [
+				{
+					"filename": "guillotine.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 16,
+						"h": 48
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "guillotineblade.png",
+					"region": {
+						"x": 1,
+						"y": 51,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:78c8cd8216b5538ea8b3b8b8734329c4:88a68e21b2175a6dae3c7aa140a4c894:e1a15cf0371aa2142ad83bd0583485ed$"
+	}
+}

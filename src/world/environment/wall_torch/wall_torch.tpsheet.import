@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/wall_torch.tpsheet-729ae2b730ce75716a3942e74fcbfd79.res"
+
+[deps]
+
+files=[ "res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_lit.tres", "res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_unlit.tres" ]
+
+source_file="res://src/world/environment/wall_torch/wall_torch.tpsheet"
+dest_files=[ "res://.import/wall_torch.tpsheet-729ae2b730ce75716a3942e74fcbfd79.res", "res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_lit.tres", "res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_unlit.tres" ]
+
+[params]
+

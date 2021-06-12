@@ -1,0 +1,48 @@
+{
+	"textures": [
+		{
+			"image": "wall_torch.png",
+			"size": {
+				"w": 20,
+				"h": 10
+			},
+			"sprites": [
+				{
+					"filename": "walltorch_lit.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 8,
+						"h": 8
+					},
+					"margin": {
+						"x": 4,
+						"y": 6,
+						"w": 8,
+						"h": 8
+					}
+				},
+				{
+					"filename": "walltorch_unlit.png",
+					"region": {
+						"x": 11,
+						"y": 1,
+						"w": 8,
+						"h": 8
+					},
+					"margin": {
+						"x": 4,
+						"y": 6,
+						"w": 8,
+						"h": 8
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:3b34d45780561b7ab9df1b4448a29710:a78c5c9b2e00fa34a0d983acf256b097:ec506bdb3d83050b96e5c215506abdc7$"
+	}
+}

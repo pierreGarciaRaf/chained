@@ -3,15 +3,45 @@
 		{
 			"image": "chain.png",
 			"size": {
-				"w": 42,
-				"h": 8
+				"w": 30,
+				"h": 24
 			},
 			"sprites": [
+				{
+					"filename": "chain2.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 16,
+						"h": 8
+					},
+					"margin": {
+						"x": 0,
+						"y": 4,
+						"w": 0,
+						"h": 8
+					}
+				},
+				{
+					"filename": "chain2circle.png",
+					"region": {
+						"x": 19,
+						"y": 1,
+						"w": 10,
+						"h": 8
+					},
+					"margin": {
+						"x": 3,
+						"y": 4,
+						"w": 6,
+						"h": 8
+					}
+				},
 				{
 					"filename": "chainwhole.png",
 					"region": {
 						"x": 1,
-						"y": 1,
+						"y": 11,
 						"w": 16,
 						"h": 6
 					},
@@ -26,7 +56,7 @@
 					"filename": "chainwide.png",
 					"region": {
 						"x": 19,
-						"y": 1,
+						"y": 11,
 						"w": 9,
 						"h": 6
 					},
@@ -40,8 +70,8 @@
 				{
 					"filename": "chainthin.png",
 					"region": {
-						"x": 30,
-						"y": 1,
+						"x": 1,
+						"y": 19,
 						"w": 11,
 						"h": 4
 					},
@@ -58,6 +88,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:f0fe29b12a6dd5aa1fb1f8454c4fec23:b5e721ffe2683961b25fa7723a00c095:bdc19e23ebdfda387f506bc2da011922$"
+		"smartupdate": "$TexturePacker:SmartUpdate:95437efeffc65ac242445c0acbcae9f6:d1da8fb4ac4c55e342bb6a7d42228407:bdc19e23ebdfda387f506bc2da011922$"
 	}
 }

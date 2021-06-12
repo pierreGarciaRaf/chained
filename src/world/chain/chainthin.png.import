@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/liana.png-929ad2f25bc3442a200fcf3dedd90a37.stex"
+path="res://.import/chainthin.png-3c51ceb740d184e240466a7edf7a3b2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/world/chain/liana.png"
-dest_files=[ "res://.import/liana.png-929ad2f25bc3442a200fcf3dedd90a37.stex" ]
+source_file="res://src/world/chain/chainthin.png"
+dest_files=[ "res://.import/chainthin.png-3c51ceb740d184e240466a7edf7a3b2b.stex" ]
 
 [params]
 

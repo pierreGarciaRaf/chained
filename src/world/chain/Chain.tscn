@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://src/world/chain/liana.png" type="Texture" id=1]
+[ext_resource path="res://src/world/chain/chainwhole.png" type="Texture" id=1]
 [ext_resource path="res://src/world/chain/Chain.gd" type="Script" id=2]
 
 [sub_resource type="Curve2D" id=1]
@@ -20,6 +20,7 @@ curve = SubResource( 1 )
 [node name="Chain" type="Node2D" parent="."]
 
 [node name="Line2D" type="Line2D" parent="."]
-width = 20.0
+width = 16.0
 texture = ExtResource( 1 )
 texture_mode = 1
+joint_mode = 2
