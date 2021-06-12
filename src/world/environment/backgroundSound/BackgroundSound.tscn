@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/world/environment/backgroundSound/ambiance.wav" type="AudioStream" id=1]
+[ext_resource path="res://src/world/environment/backgroundSound/RandomSound.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/world/environment/backgroundSound/dripping-slow.wav" type="AudioStream" id=3]
+[ext_resource path="res://src/world/environment/backgroundSound/wind.wav" type="AudioStream" id=4]
 
 [node name="BackgroundSound" type="Node"]
 
@@ -8,3 +11,17 @@
 stream = ExtResource( 1 )
 autoplay = true
 bus = "Background"
+
+[node name="Drip" parent="." instance=ExtResource( 2 )]
+
+[node name="Drip-slow" parent="." instance=ExtResource( 2 )]
+stream = ExtResource( 3 )
+volume_db = -12.835
+min_delay = 5.0
+max_delay = 20.0
+
+[node name="Wind" parent="." instance=ExtResource( 2 )]
+stream = ExtResource( 4 )
+volume_db = -4.252
+min_delay = 10.0
+max_delay = 20.0

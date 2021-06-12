@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dripping-cave.wav-98fe1a06bae0b8b89df7fb9af169fe83.sample"
+
+[deps]
+
+source_file="res://src/world/environment/backgroundSound/dripping-cave.wav"
+dest_files=[ "res://.import/dripping-cave.wav-98fe1a06bae0b8b89df7fb9af169fe83.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop=false
+compress/mode=0
