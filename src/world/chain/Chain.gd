@@ -1,15 +1,21 @@
 extends Node2D
+class_name Chain
 
 var Loop = preload("res://src/world/chain/Loop.tscn")
 var Joint = preload("res://src/world/chain/Joint.tscn")
 
-const points_density = 0.035 # number of items per pixel ? unit offset
+const points_density = 0.08 # number of items per pixel ? unit offset
 
 # initial path
-var points = PoolVector2Array([Vector2(0,0),Vector2(10,10),Vector2(20,40),Vector2(40,100)])
+var points:PoolVector2Array
+
+# chain links
+var player:KinematicBody2D
+var monster:KinematicBody2D
 
 func _ready():
-	build_chain();
+	self.position = points[0]
+	build_chain()
 
 func _process(_delta):
 	# update Line2D with position of rigidbodies
@@ -18,6 +24,7 @@ func _process(_delta):
 
 
 func build_chain():
+	print("build")
 	# Build
 	var length = build_curve()
 	$Path2D/PathFollow2D.unit_offset = 0
@@ -25,7 +32,7 @@ func build_chain():
 	
 	var count = max(1,round(points_density * length))
 	var unit_offset_step = 1.0/count
-	var parent = null
+	var parent = monster
 	for _loop_index in range (1+count):
 		var new_position = $Path2D/PathFollow2D.position - head_position
 		var child = addLoop(new_position)
@@ -33,6 +40,7 @@ func build_chain():
 		parent = child
 		$Line2D.add_point(new_position)
 		$Path2D/PathFollow2D.unit_offset += unit_offset_step
+	addLink(parent,player)
 
 func addLoop(position):
 	var loop = Loop.instance()

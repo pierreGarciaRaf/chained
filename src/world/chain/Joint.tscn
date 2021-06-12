@@ -2,4 +2,4 @@
 
 [node name="Link" type="PinJoint2D"]
 bias = 0.9
-softness = 0.1
+softness = 1.83

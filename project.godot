@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node2D",
+"class": "Chain",
+"language": "GDScript",
+"path": "res://src/world/chain/Chain.gd"
+}, {
 "base": "Node",
 "class": "StateMachine",
 "language": "GDScript",
 "path": "res://src/common/StateMachine.gd"
 } ]
 _global_script_class_icons={
+"Chain": "",
 "StateMachine": ""
 }
 
@@ -81,6 +87,8 @@ go_right={
 [physics]
 
 common/enable_pause_aware_picking=true
+2d/default_gravity=0
+2d/default_gravity_vector=Vector2( 0, 0 )
 
 [rendering]
 

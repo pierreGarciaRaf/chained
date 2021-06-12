@@ -7,3 +7,4 @@ func _physics_process(delta):
 	var yAxis = int(Input.is_action_pressed("go_down")) - int(Input.is_action_pressed("go_up"))
 	
 	self.move_and_slide(Vector2(xAxis,yAxis).normalized() * speed)
+

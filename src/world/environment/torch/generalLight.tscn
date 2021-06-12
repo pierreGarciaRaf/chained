@@ -12,3 +12,7 @@ shadow_filter_smooth = 10.4
 script = ExtResource( 2 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.0548895, 0.060152 )
+texture = ExtResource( 1 )
