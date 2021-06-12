@@ -3,14 +3,59 @@
 		{
 			"image": "chain.png",
 			"size": {
-				"w": 30,
-				"h": 24
+				"w": 122,
+				"h": 10
 			},
 			"sprites": [
 				{
-					"filename": "chain2.png",
+					"filename": "chainthin.png",
 					"region": {
 						"x": 1,
+						"y": 1,
+						"w": 11,
+						"h": 4
+					},
+					"margin": {
+						"x": 5,
+						"y": 6,
+						"w": 5,
+						"h": 12
+					}
+				},
+				{
+					"filename": "chainwhole.png",
+					"region": {
+						"x": 14,
+						"y": 1,
+						"w": 16,
+						"h": 6
+					},
+					"margin": {
+						"x": 0,
+						"y": 5,
+						"w": 0,
+						"h": 10
+					}
+				},
+				{
+					"filename": "chainwide.png",
+					"region": {
+						"x": 32,
+						"y": 1,
+						"w": 9,
+						"h": 6
+					},
+					"margin": {
+						"x": 0,
+						"y": 5,
+						"w": 7,
+						"h": 10
+					}
+				},
+				{
+					"filename": "chain2.png",
+					"region": {
+						"x": 43,
 						"y": 1,
 						"w": 16,
 						"h": 8
@@ -25,7 +70,7 @@
 				{
 					"filename": "chain2circle.png",
 					"region": {
-						"x": 19,
+						"x": 61,
 						"y": 1,
 						"w": 10,
 						"h": 8
@@ -38,48 +83,18 @@
 					}
 				},
 				{
-					"filename": "chainwhole.png",
+					"filename": "chainx3.png",
 					"region": {
-						"x": 1,
-						"y": 11,
-						"w": 16,
-						"h": 6
+						"x": 73,
+						"y": 1,
+						"w": 48,
+						"h": 8
 					},
 					"margin": {
 						"x": 0,
-						"y": 5,
+						"y": 4,
 						"w": 0,
-						"h": 10
-					}
-				},
-				{
-					"filename": "chainwide.png",
-					"region": {
-						"x": 19,
-						"y": 11,
-						"w": 9,
-						"h": 6
-					},
-					"margin": {
-						"x": 0,
-						"y": 5,
-						"w": 7,
-						"h": 10
-					}
-				},
-				{
-					"filename": "chainthin.png",
-					"region": {
-						"x": 1,
-						"y": 19,
-						"w": 11,
-						"h": 4
-					},
-					"margin": {
-						"x": 5,
-						"y": 6,
-						"w": 5,
-						"h": 12
+						"h": 8
 					}
 				}
 			]
@@ -88,6 +103,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:95437efeffc65ac242445c0acbcae9f6:d1da8fb4ac4c55e342bb6a7d42228407:bdc19e23ebdfda387f506bc2da011922$"
+		"smartupdate": "$TexturePacker:SmartUpdate:a0990e231ca289cca00a628836957820:7a040f9cf9c15b6b128878728689c69c:bdc19e23ebdfda387f506bc2da011922$"
 	}
 }

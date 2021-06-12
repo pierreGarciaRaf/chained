@@ -1,0 +1,168 @@
+{
+	"textures": [
+		{
+			"image": "death.png",
+			"size": {
+				"w": 1620,
+				"h": 92
+			},
+			"sprites": [
+				{
+					"filename": "deathanim1.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim10.png",
+					"region": {
+						"x": 163,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim2.png",
+					"region": {
+						"x": 325,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim3.png",
+					"region": {
+						"x": 487,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim4.png",
+					"region": {
+						"x": 649,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim5.png",
+					"region": {
+						"x": 811,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim6.png",
+					"region": {
+						"x": 973,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim7.png",
+					"region": {
+						"x": 1135,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim8.png",
+					"region": {
+						"x": 1297,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "deathanim9.png",
+					"region": {
+						"x": 1459,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:df5b5f211b4dd491beecdab843556898:ace94f3a5c22df85000885ddce6b6f93:abce4932a94e7e8c3c2fc614491d4ecd$"
+	}
+}

@@ -1,0 +1,130 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/levelSelector/buttonToLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/levelSelector/header_itchio.png" type="Texture" id=2]
+[ext_resource path="res://src/levelSelector/introduction.wav" type="AudioStream" id=3]
+[ext_resource path="res://src/levelSelector/levelSelector.gd" type="Script" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="splash" type="Sprite" parent="."]
+position = Vector2( 503.048, 330.959 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -506.829
+margin_top = 170.503
+margin_right = -26.8293
+margin_bottom = 485.503
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 25.0
+margin_top = 32.0
+margin_right = -18.0
+margin_bottom = -19.0
+columns = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonToLevel0" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_right = 89.0
+margin_bottom = 14.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel1" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 93.0
+margin_right = 182.0
+margin_bottom = 14.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel2" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 186.0
+margin_right = 275.0
+margin_bottom = 14.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel3" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 279.0
+margin_right = 368.0
+margin_bottom = 14.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel4" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_top = 18.0
+margin_right = 89.0
+margin_bottom = 32.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel5" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 93.0
+margin_top = 18.0
+margin_right = 182.0
+margin_bottom = 32.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel6" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 186.0
+margin_top = 18.0
+margin_right = 275.0
+margin_bottom = 32.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel7" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 279.0
+margin_top = 18.0
+margin_right = 368.0
+margin_bottom = 32.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel8" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_top = 36.0
+margin_right = 89.0
+margin_bottom = 50.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel9" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 93.0
+margin_top = 36.0
+margin_right = 182.0
+margin_bottom = 50.0
+disabled = false
+text = "filledOnReady"
+
+[node name="Introduction" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -10.0
+
+[node name="SoundTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="finished" from="Introduction" to="." method="_on_Introduction_finished"]
+[connection signal="timeout" from="SoundTimer" to="." method="_on_SoundTimer_timeout"]

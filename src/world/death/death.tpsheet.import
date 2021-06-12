@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/death.tpsheet-f0b05bd36368a1efc2385b60ad09e28b.res"
+
+[deps]
+
+files=[ "res://src/world/death/death.sprites/deathanim1.tres", "res://src/world/death/death.sprites/deathanim10.tres", "res://src/world/death/death.sprites/deathanim2.tres", "res://src/world/death/death.sprites/deathanim3.tres", "res://src/world/death/death.sprites/deathanim4.tres", "res://src/world/death/death.sprites/deathanim5.tres", "res://src/world/death/death.sprites/deathanim6.tres", "res://src/world/death/death.sprites/deathanim7.tres", "res://src/world/death/death.sprites/deathanim8.tres", "res://src/world/death/death.sprites/deathanim9.tres" ]
+
+source_file="res://src/world/death/death.tpsheet"
+dest_files=[ "res://.import/death.tpsheet-f0b05bd36368a1efc2385b60ad09e28b.res", "res://src/world/death/death.sprites/deathanim1.tres", "res://src/world/death/death.sprites/deathanim10.tres", "res://src/world/death/death.sprites/deathanim2.tres", "res://src/world/death/death.sprites/deathanim3.tres", "res://src/world/death/death.sprites/deathanim4.tres", "res://src/world/death/death.sprites/deathanim5.tres", "res://src/world/death/death.sprites/deathanim6.tres", "res://src/world/death/death.sprites/deathanim7.tres", "res://src/world/death/death.sprites/deathanim8.tres", "res://src/world/death/death.sprites/deathanim9.tres" ]
+
+[params]
+

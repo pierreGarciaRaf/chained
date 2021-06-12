@@ -30,6 +30,16 @@ config/name="Chained"
 run/main_scene="res://src/levels/testLevel.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+LevelChangeManager="*res://src/levelSelector/levelChangeManager.gd"
+
+[display]
+
+window/size/resizable=false
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/codeandweb.texturepacker/plugin.cfg" )

@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/world/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/world/monster/monster.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/common/levelTemplate.gd" type="Script" id=4]
 [ext_resource path="res://src/world/environment/walls&Floor/blueTileset.tres" type="TileSet" id=5]
+[ext_resource path="res://src/world/environment/backgroundSound/BackgroundSound.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 1, 0 )
@@ -41,10 +42,11 @@ playerPath = NodePath("../player")
 nav2DPath = NodePath("../Navigation2D")
 
 [node name="wall_torch3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 41.6073, 203.204 )
 
 [node name="wall_torch4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 168.229, 137.688 )
 
 [node name="wall_torch5" parent="." instance=ExtResource( 3 )]
 position = Vector2( 362.684, 82.5335 )
+
+[node name="BackgroundSound" parent="." instance=ExtResource( 6 )]
