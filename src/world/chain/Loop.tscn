@@ -1,16 +1,13 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://src/world/chain/Loop.gd" type="Script" id=2]
+[gd_scene load_steps=2 format=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 4.76395
 
 [node name="Loop" type="RigidBody2D"]
 z_index = 1
-collision_layer = 2
-collision_mask = 2
+collision_layer = 0
+collision_mask = 0
 linear_damp = 9.403
-script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1.64934, 3.93713 )
