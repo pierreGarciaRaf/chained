@@ -1,15 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/levelSelector/deathPopup/deathPopup.gd" type="Script" id=1]
-[ext_resource path="res://src/levelSelector/habillage.png" type="Texture" id=2]
 
-[sub_resource type="StyleBoxTexture" id=1]
-texture = ExtResource( 2 )
-region_rect = Rect2( 0, 0, 1664, 960 )
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.870588, 0.219608, 0.219608, 0.0705882 )
 
 [sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.768627, 0.137255, 0.137255, 0.54902 )
 
 [sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.768627, 0.137255, 0.137255, 0.54902 )
 
 [node name="deathPopup" type="PopupPanel"]
 pause_mode = 2
@@ -34,22 +34,23 @@ anchor_left = 0.046
 anchor_top = 0.082
 anchor_right = 0.94
 anchor_bottom = 0.903
-margin_left = -20.378
-margin_top = -19.68
-margin_right = 26.58
-margin_bottom = 23.28
+margin_left = -19.689
+margin_top = -20.3691
+margin_right = 27.269
+margin_bottom = 22.591
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="Control"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = -236.5
-margin_right = 236.5
-margin_bottom = 146.0
+anchor_left = 0.498445
+anchor_right = 0.498445
+margin_left = -235.811
+margin_top = 46.1651
+margin_right = 237.189
+margin_bottom = 192.165
 grow_horizontal = 0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0.768627, 0.137255, 0.137255, 1 )
 text = "You are dead"
 align = 1
 valign = 1
@@ -62,12 +63,12 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -134.827
-margin_top = -75.7089
-margin_right = -21.827
-margin_bottom = -18.7089
+margin_left = -146.826
+margin_top = -146.679
+margin_right = -33.8259
+margin_bottom = -89.6791
 custom_styles/normal = SubResource( 2 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Exit to menu"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -76,12 +77,12 @@ __meta__ = {
 [node name="restart" type="Button" parent="Control"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 18.7089
-margin_top = -76.1544
-margin_right = 131.709
-margin_bottom = -19.1544
+margin_left = 37.3127
+margin_top = -146.958
+margin_right = 150.313
+margin_bottom = -89.9576
 custom_styles/normal = SubResource( 3 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Restart level"
 __meta__ = {
 "_edit_use_anchors_": false
