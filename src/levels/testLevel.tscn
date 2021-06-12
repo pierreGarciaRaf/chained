@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/world/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/world/monster/monster.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/world/environment/torch/generalLight.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/world/environment/backgroundSound/BackgroundSound.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/world/environment/walls&Floor/groundPlaceHolderTileset.tres" type="TileSet" id=5]
 
 [node name="Node2D" type="Node2D"]
@@ -45,3 +46,5 @@ position = Vector2( 113.036, 348.801 )
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 180, 0 )
+
+[node name="BackgroundSound" parent="." instance=ExtResource( 4 )]
