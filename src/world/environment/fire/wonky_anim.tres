@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=2]
+
+[ext_resource path="res://src/world/environment/fire/fire.sprites/wonkyfire2.tres" type="Texture" id=2]
+[ext_resource path="res://src/world/environment/fire/fire.sprites/wonkyfire3.tres" type="Texture" id=3]
+[ext_resource path="res://src/world/environment/fire/fire.sprites/wonkyfire6.tres" type="Texture" id=4]
+[ext_resource path="res://src/world/environment/fire/fire.sprites/wonkyfire8.tres" type="Texture" id=5]
+[ext_resource path="res://src/world/environment/fire/fire.sprites/wonkyfire5.tres" type="Texture" id=6]
+[ext_resource path="res://src/world/environment/fire/fire.sprites/wonkyfire4.tres" type="Texture" id=7]
+[ext_resource path="res://src/world/environment/fire/fire.sprites/wonkyfire1.tres" type="Texture" id=8]
+[ext_resource path="res://src/world/environment/fire/fire.sprites/wonkyfire7.tres" type="Texture" id=9]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]

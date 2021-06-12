@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_lit.tres" type="Texture" id=1]
+[ext_resource path="res://src/world/environment/fire/cheap_anim.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://src/world/environment/light/generalLight.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/world/environment/wall_torch/wall_torch.gd" type="Script" id=4]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+light_mode = 1
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 53.8903
+
+[node name="wall_torch" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="walltorch" type="Sprite" parent="."]
+self_modulate = Color( 0.588235, 0.588235, 0.588235, 1 )
+texture = ExtResource( 1 )
+
+[node name="fire" type="AnimatedSprite" parent="."]
+material = SubResource( 1 )
+position = Vector2( -0.0883904, -8.22012 )
+frames = ExtResource( 2 )
+frame = 4
+playing = true
+
+[node name="generalLight" parent="." instance=ExtResource( 3 )]
+
+[node name="monsterDetector" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="monsterDetector"]
+visible = false
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+collision_mask = 20
+
+[connection signal="body_entered" from="monsterDetector" to="." method="_on_monsterDetector_body_entered"]
+[connection signal="body_exited" from="monsterDetector" to="." method="_on_monsterDetector_body_exited"]
