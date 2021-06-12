@@ -13,7 +13,7 @@ var points:PoolVector2Array
 var player:KinematicBody2D
 var monster:KinematicBody2D
 
-signal chain_is_tensed(direction)
+signal chain_is_tensed(direction,player_direction)
 
 var initial_length
 
@@ -28,7 +28,9 @@ func _process(_delta):
 	var current_length = lengthOf($Line2D.points)
 	if current_length/initial_length > 1.2:
 		print('ça tire', initial_length,' ',current_length)
-		emit_signal("chain_is_tensed",$Chain.get_child(0).position.direction_to($Chain.get_child(1).position))
+		var chain_direction = $Chain.get_child(0).position.direction_to($Chain.get_child(1).position)	
+		var player_direction = monster.position.direction_to(player.position)
+		emit_signal("chain_is_tensed",chain_direction,player_direction)
 
 func build_chain():
 	print("build")
