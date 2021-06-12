@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/monster.tpsheet-2de241357930e7dfa5afb4f51a73bc61.res"
+
+[deps]
+
+files=[ "res://src/world/monster/monster.sprites/monsterback1.tres", "res://src/world/monster/monster.sprites/monsterback3.tres", "res://src/world/monster/monster.sprites/monsterback2.tres", "res://src/world/monster/monster.sprites/monsterback4.tres", "res://src/world/monster/monster.sprites/monsterfront1.tres", "res://src/world/monster/monster.sprites/monsterfront3.tres", "res://src/world/monster/monster.sprites/monsterfront2.tres", "res://src/world/monster/monster.sprites/monsterfront4.tres" ]
+
+source_file="res://src/world/monster/monster.tpsheet"
+dest_files=[ "res://.import/monster.tpsheet-2de241357930e7dfa5afb4f51a73bc61.res", "res://src/world/monster/monster.sprites/monsterback1.tres", "res://src/world/monster/monster.sprites/monsterback3.tres", "res://src/world/monster/monster.sprites/monsterback2.tres", "res://src/world/monster/monster.sprites/monsterback4.tres", "res://src/world/monster/monster.sprites/monsterfront1.tres", "res://src/world/monster/monster.sprites/monsterfront3.tres", "res://src/world/monster/monster.sprites/monsterfront2.tres", "res://src/world/monster/monster.sprites/monsterfront4.tres" ]
+
+[params]
+

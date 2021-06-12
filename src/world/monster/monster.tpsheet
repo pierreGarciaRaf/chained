@@ -1,0 +1,138 @@
+{
+	"textures": [
+		{
+			"image": "monster.png",
+			"size": {
+				"w": 108,
+				"h": 18
+			},
+			"sprites": [
+				{
+					"filename": "monsterback1.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monsterback3.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monsterback2.png",
+					"region": {
+						"x": 19,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monsterback4.png",
+					"region": {
+						"x": 37,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monsterfront1.png",
+					"region": {
+						"x": 55,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monsterfront3.png",
+					"region": {
+						"x": 55,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monsterfront2.png",
+					"region": {
+						"x": 73,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "monsterfront4.png",
+					"region": {
+						"x": 91,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:94911b0c246b82e0d75a1ae63a5e466b:cec6088f5040da538a4f53ef7daf0e79:5db36858ef56526acf4459bc0bb8453a$"
+	}
+}

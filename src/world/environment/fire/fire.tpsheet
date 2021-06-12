@@ -1,0 +1,363 @@
+{
+	"textures": [
+		{
+			"image": "fire.png",
+			"size": {
+				"w": 32,
+				"h": 112
+			},
+			"sprites": [
+				{
+					"filename": "fire3.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 12,
+						"h": 16
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cheapfire5.png",
+					"region": {
+						"x": 1,
+						"y": 19,
+						"w": 9,
+						"h": 16
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 7,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cheapfire8.png",
+					"region": {
+						"x": 15,
+						"y": 1,
+						"w": 9,
+						"h": 16
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 7,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wonkyfire6.png",
+					"region": {
+						"x": 26,
+						"y": 1,
+						"w": 5,
+						"h": 12
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 11,
+						"h": 4
+					}
+				},
+				{
+					"filename": "fire.gif",
+					"region": {
+						"x": 1,
+						"y": 37,
+						"w": 9,
+						"h": 16
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 7,
+						"h": 0
+					}
+				},
+				{
+					"filename": "fire1.png",
+					"region": {
+						"x": 1,
+						"y": 37,
+						"w": 9,
+						"h": 16
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 7,
+						"h": 0
+					}
+				},
+				{
+					"filename": "fire2.png",
+					"region": {
+						"x": 12,
+						"y": 19,
+						"w": 9,
+						"h": 16
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 7,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cheapfire4.png",
+					"region": {
+						"x": 23,
+						"y": 19,
+						"w": 8,
+						"h": 16
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cheapfire2.png",
+					"region": {
+						"x": 1,
+						"y": 55,
+						"w": 9,
+						"h": 15
+					},
+					"margin": {
+						"x": 3,
+						"y": 1,
+						"w": 7,
+						"h": 1
+					}
+				},
+				{
+					"filename": "cheapfire3.png",
+					"region": {
+						"x": 12,
+						"y": 37,
+						"w": 9,
+						"h": 15
+					},
+					"margin": {
+						"x": 3,
+						"y": 1,
+						"w": 7,
+						"h": 1
+					}
+				},
+				{
+					"filename": "fire4.png",
+					"region": {
+						"x": 23,
+						"y": 37,
+						"w": 8,
+						"h": 16
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cheapfire6.png",
+					"region": {
+						"x": 12,
+						"y": 54,
+						"w": 9,
+						"h": 15
+					},
+					"margin": {
+						"x": 3,
+						"y": 1,
+						"w": 7,
+						"h": 1
+					}
+				},
+				{
+					"filename": "cheapfire.gif",
+					"region": {
+						"x": 23,
+						"y": 55,
+						"w": 8,
+						"h": 14
+					},
+					"margin": {
+						"x": 4,
+						"y": 2,
+						"w": 8,
+						"h": 2
+					}
+				},
+				{
+					"filename": "cheapfire1.png",
+					"region": {
+						"x": 23,
+						"y": 55,
+						"w": 8,
+						"h": 14
+					},
+					"margin": {
+						"x": 4,
+						"y": 2,
+						"w": 8,
+						"h": 2
+					}
+				},
+				{
+					"filename": "wonkyfire5.png",
+					"region": {
+						"x": 1,
+						"y": 72,
+						"w": 7,
+						"h": 16
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 9,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wonkyfire3.png",
+					"region": {
+						"x": 1,
+						"y": 90,
+						"w": 7,
+						"h": 15
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 9,
+						"h": 1
+					}
+				},
+				{
+					"filename": "wonkyfire.gif",
+					"region": {
+						"x": 10,
+						"y": 72,
+						"w": 6,
+						"h": 14
+					},
+					"margin": {
+						"x": 5,
+						"y": 2,
+						"w": 10,
+						"h": 2
+					}
+				},
+				{
+					"filename": "wonkyfire1.png",
+					"region": {
+						"x": 10,
+						"y": 72,
+						"w": 6,
+						"h": 14
+					},
+					"margin": {
+						"x": 5,
+						"y": 2,
+						"w": 10,
+						"h": 2
+					}
+				},
+				{
+					"filename": "cheapfire7.png",
+					"region": {
+						"x": 18,
+						"y": 71,
+						"w": 9,
+						"h": 13
+					},
+					"margin": {
+						"x": 3,
+						"y": 3,
+						"w": 7,
+						"h": 3
+					}
+				},
+				{
+					"filename": "wonkyfire2.png",
+					"region": {
+						"x": 10,
+						"y": 88,
+						"w": 6,
+						"h": 12
+					},
+					"margin": {
+						"x": 5,
+						"y": 2,
+						"w": 10,
+						"h": 4
+					}
+				},
+				{
+					"filename": "wonkyfire4.png",
+					"region": {
+						"x": 18,
+						"y": 86,
+						"w": 9,
+						"h": 10
+					},
+					"margin": {
+						"x": 3,
+						"y": 1,
+						"w": 7,
+						"h": 6
+					}
+				},
+				{
+					"filename": "wonkyfire7.png",
+					"region": {
+						"x": 10,
+						"y": 102,
+						"w": 7,
+						"h": 9
+					},
+					"margin": {
+						"x": 5,
+						"y": 4,
+						"w": 9,
+						"h": 7
+					}
+				},
+				{
+					"filename": "wonkyfire8.png",
+					"region": {
+						"x": 19,
+						"y": 98,
+						"w": 7,
+						"h": 12
+					},
+					"margin": {
+						"x": 4,
+						"y": 4,
+						"w": 9,
+						"h": 4
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:cdcf3f8db0beb0f6fb52ab3e323ecf42:a4861e32ad4b2ab1b2d21bc48b5f9e73:3b95f9ee06c6eea9fb51cacef442595a$"
+	}
+}

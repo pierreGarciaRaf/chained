@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/guillotine.tpsheet-d8fd109fcc8f5bb295214f8990209a4e.res"
+
+[deps]
+
+files=[ "res://src/world/environment/guillotine/guillotine.sprites/guillotine.tres", "res://src/world/environment/guillotine/guillotine.sprites/guillotineblade.tres" ]
+
+source_file="res://src/world/environment/guillotine/guillotine.tpsheet"
+dest_files=[ "res://.import/guillotine.tpsheet-d8fd109fcc8f5bb295214f8990209a4e.res", "res://src/world/environment/guillotine/guillotine.sprites/guillotine.tres", "res://src/world/environment/guillotine/guillotine.sprites/guillotineblade.tres" ]
+
+[params]
+
