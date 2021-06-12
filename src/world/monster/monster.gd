@@ -20,19 +20,16 @@ onready var magicChainRes = preload("res://src/world/magicChain/magicChain.tscn"
 export var speed = 150
 
 export var nav2DPath:NodePath
-var distJump = 64
+var distJump = 32+16
 
 var nav2D:Navigation2D
 
 signal player_dead
 
-var chainFollowShower
 
 var torchToPutOut : Node2D = null 
 
 func _ready():
-	chainFollowShower = lightRes.instance()
-	get_parent().call_deferred("add_child",chainFollowShower)
 	player = get_node(playerPath)
 	nav2D = get_node(nav2DPath)
 	build_chain_to_player(nav2D)
@@ -89,6 +86,8 @@ func _applyVelocity(delta):
 	if col:
 		if col.collider.name == "player":
 			emit_signal("player_dead")
+
+func tryToSeePlayer():
 	var vectToPlayer = player.global_position - self.global_position
 	if vectToPlayer.length() < distJump:
 		$jumpRcast.enabled = true
@@ -99,7 +98,6 @@ func _applyVelocity(delta):
 
 
 func _onSeeingTorch(torch):
-	print("seesTorch")
 	torchToPutOut = torch
 
 func get_to_torch():

@@ -67,3 +67,5 @@ func _state_logic(delta):
 		states.put_out_torch:
 			parent.idle()
 	parent._applyVelocity(delta)
+	if not state in [states.idle, states.get_to_torch, states.put_out_torch]:
+		parent.tryToSeePlayer()

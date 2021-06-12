@@ -16,8 +16,8 @@ __meta__ = {
 }
 
 [node name="splash" type="Sprite" parent="."]
-position = Vector2( 503.048, 330.959 )
-scale = Vector2( 2, 2 )
+position = Vector2( 472.333, 301.742 )
+scale = Vector2( 1.823, 1.823 )
 texture = ExtResource( 2 )
 
 [node name="Panel" type="Panel" parent="."]

@@ -15,5 +15,5 @@ func _ready():
 	print(tileMapForLightRcast.get_collision_layer_bit(4))
 	
 	tileMapForLightRcast.show_collision = true
-	(tileMapForLightRcast).tile_set = preload("res://src/world/environment/walls&Floor/groundPlaceHolderForLightRcastColl.tres")
+	(tileMapForLightRcast).tile_set = preload("res://src/world/environment/walls&Floor/blueTilesetLightCollisions.tres")
 	tileMap.get_parent().add_child(tileMapForLightRcast)

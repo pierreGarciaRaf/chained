@@ -1,30 +1,63 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://src/world/monster/MonsterAnimSTM.gd" type="Script" id=1]
 [ext_resource path="res://src/world/monster/monster.gd" type="Script" id=2]
 [ext_resource path="res://src/world/monster/monsterSTM.gd" type="Script" id=3]
-[ext_resource path="res://src/world/monster/monster.sprites/monsterback4.tres" type="Texture" id=4]
-[ext_resource path="res://src/world/monster/monster.sprites/monsterback1.tres" type="Texture" id=5]
-[ext_resource path="res://src/world/monster/monster.sprites/monsterback2.tres" type="Texture" id=6]
-[ext_resource path="res://src/world/monster/monster.sprites/monsterback3.tres" type="Texture" id=7]
-[ext_resource path="res://src/world/monster/monster.sprites/monsterfront3.tres" type="Texture" id=8]
-[ext_resource path="res://src/world/monster/monster.sprites/monsterfront1.tres" type="Texture" id=9]
-[ext_resource path="res://src/world/monster/monster.sprites/monsterfront2.tres" type="Texture" id=10]
-[ext_resource path="res://src/world/monster/monster.sprites/monsterfront4.tres" type="Texture" id=11]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront_tensed4.tres" type="Texture" id=4]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront_tensed1.tres" type="Texture" id=5]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallback_tensed2.tres" type="Texture" id=6]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront_tensed3.tres" type="Texture" id=7]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallback_tensed1.tres" type="Texture" id=8]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallback_tensed4.tres" type="Texture" id=9]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront_tensed2.tres" type="Texture" id=10]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallback_tensed3.tres" type="Texture" id=11]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallback2.tres" type="Texture" id=12]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallback4.tres" type="Texture" id=13]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallback1.tres" type="Texture" id=14]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallback3.tres" type="Texture" id=15]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertall_jump2_(100ms).tres" type="Texture" id=16]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertall_jump4_(100ms).tres" type="Texture" id=17]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront3.tres" type="Texture" id=18]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertall_jump1_(300ms).tres" type="Texture" id=19]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront2.tres" type="Texture" id=20]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront4.tres" type="Texture" id=21]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertall_jump3_(300ms).tres" type="Texture" id=22]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertall_jump5_(300ms).tres" type="Texture" id=23]
+[ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront1.tres" type="Texture" id=24]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 1.96266
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 19 ) ],
 "loop": true,
-"name": "walkingBack",
+"name": "crouch",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 11 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 17 ), ExtResource( 23 ), ExtResource( 23 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "jump",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "walkingFront",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "runningFront",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "runningBack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "walkingBack",
 "speed": 5.0
 } ]
 
@@ -46,10 +79,7 @@ one_shot = true
 collision_mask = 3
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 2 )
-animation = "walkingFront"
-
-[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+self_modulate = Color( 0.180392, 0.717647, 0.94902, 1 )
 frames = SubResource( 2 )
 animation = "walkingFront"
 
