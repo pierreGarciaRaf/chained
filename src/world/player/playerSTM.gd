@@ -14,7 +14,7 @@ func _ready():
 
 func _enter_state(new_state,previous_state):
 	if new_state != previous_state and previous_state != null:
-		print(states.keys()[previous_state]," -> ", states.keys()[new_state])
+#		print(states.keys()[previous_state]," -> ", states.keys()[new_state])
 		match new_state:
 			states.idle:
 				animatedSprite.stop()

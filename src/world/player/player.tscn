@@ -30,14 +30,14 @@ animations = [ {
 "name": "walkingUp",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 15 ) ],
-"loop": true,
-"name": "walkingLeft",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 13 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "walkingDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "walkingLeft",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 16 ) ],

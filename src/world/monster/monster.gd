@@ -17,7 +17,7 @@ var lastPlayerPos : Vector2
 onready var lightRes = preload("res://src/world/environment/light/generalLight.tscn")
 onready var magicChainRes = preload("res://src/world/magicChain/magicChain.tscn")
 
-export var speed = 110
+export var speed = 150
 
 export var nav2DPath:NodePath
 var distJump = 64
@@ -27,6 +27,8 @@ var nav2D:Navigation2D
 signal player_dead
 
 var chainFollowShower
+
+var torchToPutOut : Node2D = null 
 
 func _ready():
 	chainFollowShower = lightRes.instance()
@@ -76,6 +78,8 @@ func build_chain_to_player(navigation2D : Navigation2D):
 func isChainTensed():
 	return chain.is_chain_tensed()
 
+
+
 func canJumpOnPlayer():
 	var collider = $jumpRcast.get_collider()
 	return collider != null and collider == player
@@ -91,3 +95,23 @@ func _applyVelocity(delta):
 		$jumpRcast.cast_to = vectToPlayer*2
 	else:
 		$jumpRcast.enabled = false
+
+
+
+func _onSeeingTorch(torch):
+	print("seesTorch")
+	torchToPutOut = torch
+
+func get_to_torch():
+	velocity = self.global_position.direction_to(torchToPutOut.global_position)*speed/2
+
+func close_enough_to_torch():
+	return self.global_position.distance_to(torchToPutOut.global_position) < requiredDistance
+
+func put_out_torch():
+	torchToPutOut.kill()
+	torchToPutOut = null
+
+
+
+
