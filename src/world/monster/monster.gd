@@ -78,8 +78,6 @@ func isChainTensed():
 
 func canJumpOnPlayer():
 	var collider = $jumpRcast.get_collider()
-	if collider != null :
-		print(collider.name)
 	return collider != null and collider == player
 
 func _applyVelocity(delta):
