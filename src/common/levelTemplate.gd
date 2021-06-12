@@ -11,6 +11,7 @@ func _ready():
 	print(tileMap.get_collision_layer_bit(0))
 	tileMapForLightRcast.visible = false
 	tileMapForLightRcast.set_collision_layer_bit(4,true)
+	tileMapForLightRcast.name = "lightRcastMap"
 	print(tileMapForLightRcast.get_collision_layer_bit(4))
 	
 	tileMapForLightRcast.show_collision = true

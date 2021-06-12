@@ -18,9 +18,7 @@ func _process(delta):
 		$RayCast2D.cast_to = monster.position -self.position
 		if $RayCast2D.is_colliding():
 			if isMonster($RayCast2D.get_collider()):
-				print('monster Seen')
 				emit_signal("monsterSeen")
-				pass
 
 
 func _on_monsterDetector_body_exited(body):

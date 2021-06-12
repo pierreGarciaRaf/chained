@@ -1,12 +1,13 @@
 [gd_scene load_steps=2 format=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 3.20827
+radius = 6.26869
 
 [node name="Loop" type="RigidBody2D"]
 z_index = 1
 collision_layer = 8
-linear_damp = 9.403
+linear_damp = 12.133
+angular_damp = 61.784
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1.64934, 3.93713 )

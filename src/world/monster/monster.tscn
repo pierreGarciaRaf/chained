@@ -7,10 +7,11 @@
 [sub_resource type="CanvasItemMaterial" id=1]
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 6.39964
+radius = 1.96266
 
 [node name="monster" type="KinematicBody2D"]
-collision_layer = 17
+collision_layer = 12
+collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -23,3 +24,9 @@ shape = SubResource( 2 )
 
 [node name="MonsterSTM" type="Node" parent="."]
 script = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="MonsterSTM"]
+one_shot = true
+
+[node name="jumpRcast" type="RayCast2D" parent="."]
+collision_mask = 3
