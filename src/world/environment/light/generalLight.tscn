@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/world/environment/light/light_halo.png" type="Texture" id=3]
+
+[node name="generalLight" type="Light2D"]
+texture = ExtResource( 3 )
+mode = 2
+shadow_enabled = true
+shadow_filter = 4
+shadow_filter_smooth = 10.4

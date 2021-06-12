@@ -15,7 +15,7 @@ var pathToFollow : PoolVector2Array
 var pathPointIndex = 0
 
 var timeIChangedLink = 0 #for debug
-onready var lightRes = preload("res://src/world/environment/torch/generalLight.tscn")
+onready var lightRes = preload("res://src/world/environment/light/generalLight.tscn")
 
 onready var chainRes = preload("res://src/world/chain/Chain.tscn")
 
@@ -84,11 +84,7 @@ func has_to_change_target_link_pos():
 func idle():
 	velocity = Vector2.ZERO
 
-func _ready():
-	chainFollowShower = lightRes.instance()
-	get_parent().call_deferred("add_child",chainFollowShower)
-	player = get_node(playerPath)
-	build_chain_to_player()
+
 
 
 func build_chain_to_player(navigation2D : Navigation2D):
