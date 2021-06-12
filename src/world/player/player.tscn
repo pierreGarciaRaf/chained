@@ -25,6 +25,6 @@ current = true
 [node name="playerAnimationSTM" type="Node" parent="."]
 script = ExtResource( 3 )
 
-[node name="Node2D" parent="." instance=ExtResource( 4 )]
+[node name="Light" parent="." instance=ExtResource( 4 )]
 position = Vector2( -0.117985, 5.66325 )
 shadow_filter_smooth = 4.7

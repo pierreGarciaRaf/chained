@@ -13,6 +13,10 @@ var points:PoolVector2Array
 var player:KinematicBody2D
 var monster:KinematicBody2D
 
+signal chain_is_tensed(direction)
+
+var initial_length
+
 func _ready():
 	self.position = points[0]
 	build_chain()
@@ -21,7 +25,10 @@ func _process(_delta):
 	# update Line2D with position of rigidbodies
 	for i in range(0, $Chain.get_child_count()):
 		$Line2D.set_point_position(i, $Chain.get_child(i).position)
-
+	var current_length = lengthOf($Line2D.points)
+	if current_length/initial_length > 1.2:
+		print('ça tire', initial_length,' ',current_length)
+		emit_signal("chain_is_tensed",$Chain.get_child(0).position.direction_to($Chain.get_child(1).position))
 
 func build_chain():
 	print("build")
@@ -41,6 +48,7 @@ func build_chain():
 		$Line2D.add_point(new_position)
 		$Path2D/PathFollow2D.unit_offset += unit_offset_step
 	addLink(parent,player)
+	initial_length=lengthOf($Line2D.points)
 
 func addLoop(position):
 	var loop = Loop.instance()
@@ -69,3 +77,11 @@ func build_curve():
 	$Path2D.curve = curve2D
 	return length
 
+func lengthOf(points : PoolVector2Array):
+	var length=0
+	var prev_point=null
+	for point in points:
+		if prev_point:
+			length+= point.distance_to(prev_point)
+		prev_point=point
+	return length
