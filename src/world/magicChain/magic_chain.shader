@@ -59,7 +59,8 @@ void fragment(){
 	vec3 hsv = rgb2hsv(vec3(c.x,c.y,c.z));
 	hsv.z = (hsv.z / tenseFactor);
 	float evenness = float((1+int(10.0*(1.0 - tenseFactor )*TIME))%2);
-	hsv =  evenness * hsv + (1.0-evenness) * (round(1.0 - tenseFactor ) * vec3(0.0,1.0,1.0) + round(tenseFactor) * hsv);
+// 3.0 69.0 98.0
+	hsv =  evenness * hsv + (1.0-evenness) * (round(1.0 - tenseFactor ) * vec3(3.0, 200.0, 200.0)/255.0 + round(tenseFactor) * hsv);
 	
 	
 	vec3 newC = hsv2rgb(hsv);

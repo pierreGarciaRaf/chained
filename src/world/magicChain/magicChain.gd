@@ -14,7 +14,6 @@ func build():
 	$Line2D.add_point(player.global_position)
 
 func _ready():
-	Engine.set_time_scale(0.25)
 	pass
 
 func getChainLength():
@@ -31,7 +30,6 @@ func _process(delta):
 	tenseFactor = clamp(tenseFactor, minWidthProp, 1.0)
 	
 	$Line2D.material.set("shader_param/tenseFactor", tenseFactor)
-
 	print(tenseFactor)
 	
 
