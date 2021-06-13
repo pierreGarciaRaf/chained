@@ -19,7 +19,6 @@ func _ready():
 	tileMapForLightRcast.set_collision_layer_bit(4,true)
 	tileMapForLightRcast.name = "lightRcastMap"
 	
-	tileMapForLightRcast.show_collision = true
 	(tileMapForLightRcast).tile_set = preload("res://src/world/environment/walls&Floor/blueTilesetLightCollisions.tres")
 	tileMapForLightRcast.show_collision = false
 	tileMap.get_parent().add_child(tileMapForLightRcast)
@@ -41,24 +40,31 @@ func _ready():
 
 func on_guillotine_entered(body):
 	print('body entered guillotine', body)
-	if body== player:
-		print('Player about to win')
 	if body== monster:
 		print('Monster killed')
-		#monster.killed_by_guillotine()
 		guillotine.fall()
-		#end_of_level(), unlock next level
 		
 		
 func on_safe_place_entered(body):
 	print('Player wins; cut the chain')
 	guillotine.fall()
-	#break_chain(guillotine.global_position)
-	#end_of_level(), unlock next level
+
 
 func on_guillotine_fallen():
-	end_level()
+	start_victory_annimation_animation()
 
+func start_victory_annimation_animation():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	get_tree().paused = true
+	$CanvasLayer/VictoryPopup.connect('animation_ended',self,'on_victory_animation_ended')
+	$CanvasLayer/VictoryPopup.popup_centered()
+
+	
+func on_victory_animation_ended():
+	$CanvasLayer/EndLevelPopup.popup_centered()
+
+
+### Player dead
 func on_player_dead():
 	if get_tree().paused:
 		return
@@ -66,10 +72,3 @@ func on_player_dead():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().paused = true
 	$CanvasLayer/DeathPopup.popup_centered()
-
-func end_level():
-#	$CanvasModulate.visible=false # otherwise popup is hidden
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	get_tree().paused = true
-	
-	$CanvasLayer/EndLevelPopup.popup_centered()

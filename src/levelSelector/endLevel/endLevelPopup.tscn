@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/levelSelector/endLevel/endLevelPopup.gd" type="Script" id=1]
 [ext_resource path="res://src/levelSelector/habillage.png" type="Texture" id=2]
+[ext_resource path="res://src/assets/UITheme.tres" type="Theme" id=3]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 2 )
@@ -13,7 +14,6 @@ region_rect = Rect2( 0, 0, 1664, 960 )
 
 [node name="EndLevelPopup" type="PopupPanel"]
 pause_mode = 2
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -22,6 +22,7 @@ margin_left = -732.0
 margin_top = -420.0
 margin_right = -289.0
 margin_bottom = -180.0
+theme = ExtResource( 3 )
 custom_styles/panel = SubResource( 1 )
 popup_exclusive = true
 script = ExtResource( 1 )
@@ -60,10 +61,10 @@ __meta__ = {
 [node name="getToNextLevel" type="Button" parent="Control"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 20.4907
-margin_top = -76.1542
-margin_right = 133.491
-margin_bottom = -19.1542
+margin_left = 26.9994
+margin_top = -80.4934
+margin_right = 186.999
+margin_bottom = -23.4934
 custom_styles/normal = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Next level"
@@ -76,10 +77,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -133.045
-margin_top = -75.2635
-margin_right = -20.0452
-margin_bottom = -18.2635
+margin_left = -214.766
+margin_top = -80.3259
+margin_right = -22.7661
+margin_bottom = -23.3259
 custom_styles/normal = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Exit to menu"
