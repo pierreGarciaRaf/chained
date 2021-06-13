@@ -11,7 +11,7 @@ bg_color = Color( 0.768627, 0.137255, 0.137255, 0.54902 )
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.768627, 0.137255, 0.137255, 0.54902 )
 
-[node name="deathPopup" type="PopupPanel"]
+[node name="DeathPopup" type="PopupPanel"]
 pause_mode = 2
 anchor_left = 0.5
 anchor_top = 0.5
@@ -33,10 +33,10 @@ anchor_left = 0.046
 anchor_top = 0.082
 anchor_right = 0.94
 anchor_bottom = 0.903
-margin_left = -19.689
-margin_top = -20.3691
-margin_right = 27.269
-margin_bottom = 22.591
+margin_left = -20.378
+margin_top = -19.68
+margin_right = 26.58
+margin_bottom = 23.28
 __meta__ = {
 "_edit_use_anchors_": false
 }
