@@ -41,10 +41,18 @@ func _on_monsterDetector_body_exited(body):
 func put_out():
 	setLit(false)
 
+func kill():
+	$AnimationPlayer.play("kill")
+	$RayCast2D.enabled = false
+	$monsterDetector/CollisionShape2D.disabled = true
+	$playerDetector/CollisionShape2D.disabled = false
+
 func isPlayer(body):
 	if body:
 		return body.name == "player"
 	return false
+
+
 
 func setLit(value):
 	if value:
