@@ -1,0 +1,138 @@
+{
+	"textures": [
+		{
+			"image": "victory.png",
+			"size": {
+				"w": 1296,
+				"h": 92
+			},
+			"sprites": [
+				{
+					"filename": "victoryanim1.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "victoryanim2.png",
+					"region": {
+						"x": 163,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "victoryanim3.png",
+					"region": {
+						"x": 325,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "victoryanim4.png",
+					"region": {
+						"x": 487,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "victoryanim5.png",
+					"region": {
+						"x": 649,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "victoryanim6.png",
+					"region": {
+						"x": 811,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "victoryanim7.png",
+					"region": {
+						"x": 973,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "victoryanim8.png",
+					"region": {
+						"x": 1135,
+						"y": 1,
+						"w": 160,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:d51394f52d14c4a2e4df6496a06a4718:162c4901b2d53346c1b1d22fc73cd86d:e756b047b7da690d86594b9a0ab8df68$"
+	}
+}

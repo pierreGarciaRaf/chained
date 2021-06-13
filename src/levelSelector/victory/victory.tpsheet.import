@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/victory.tpsheet-c28da3df3c8790a4004657f0242c397a.res"
+
+[deps]
+
+files=[ "res://src/levelSelector/victory/victory.sprites/victoryanim1.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim2.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim3.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim4.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim5.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim6.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim7.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim8.tres" ]
+
+source_file="res://src/levelSelector/victory/victory.tpsheet"
+dest_files=[ "res://.import/victory.tpsheet-c28da3df3c8790a4004657f0242c397a.res", "res://src/levelSelector/victory/victory.sprites/victoryanim1.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim2.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim3.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim4.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim5.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim6.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim7.tres", "res://src/levelSelector/victory/victory.sprites/victoryanim8.tres" ]
+
+[params]
+

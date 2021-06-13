@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/world/environment/guillotine/Guillotine.gd" type="Script" id=1]
+[ext_resource path="res://src/world/environment/guillotine/guillotine.sprites/guillotine.tres" type="Texture" id=2]
+[ext_resource path="res://src/world/environment/guillotine/guillotine.sprites/guillotineblade.tres" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6.58488, 7.74057 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[sub_resource type="Animation" id=3]
+resource_name = "fall_blade"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Blade:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -0.2, -7.801 ), Vector2( -0.2, 16 ) ]
+}
+
+[node name="Guillotine" type="Node2D"]
+position = Vector2( 110.056, 72.2267 )
+script = ExtResource( 1 )
+
+[node name="Body" type="Sprite" parent="."]
+position = Vector2( -0.236404, 0.118225 )
+texture = ExtResource( 2 )
+
+[node name="Blade" type="Sprite" parent="."]
+position = Vector2( -0.2, -7.801 )
+texture = ExtResource( 3 )
+
+[node name="Guillotine" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Guillotine"]
+position = Vector2( -0.472797, 15.9568 )
+shape = SubResource( 1 )
+
+[node name="SafePlace" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SafePlace"]
+position = Vector2( -0.118198, -31.7955 )
+shape = SubResource( 2 )
+
+[node name="BladeAnimation" type="AnimationPlayer" parent="."]
+anims/fall_blade = SubResource( 3 )
+
+[connection signal="body_entered" from="Guillotine" to="." method="_on_Guillotine_entered"]
+[connection signal="body_entered" from="SafePlace" to="." method="_on_SafePlace_body_entered"]
+[connection signal="animation_finished" from="BladeAnimation" to="." method="_on_BladeAnimation_animation_finished"]
