@@ -1,10 +1,26 @@
 Todo list:
 (dans le sens des priorités)
--Fin de niveau (mort/victoire)
-	-Guillotine avec ses animations, couper la chaîne (si t'es déter tu peux détecter si ça tombe sur le monstre pour faire un bruit gore + du sang)
-	-Anim fin de niveau (demander à Matthieu de faire une anim de victoire)
 
--Donner du feedback sur la chaîne et son extension ( https://github.com/Gad3lan/GGJ2020/blob/master/shaders/ghost.shader pour un shader de transparence/warp fantomatique)
+Bugs
+	JB safe zone
+	P monstre qui tue quand on bouge pas
+
+
+P Joueur Allumer Torche
+
+M : Plus de niveaux
+
+
+JB
+-Fin de niveau (mort/victoire)
+	victoire : 
+		animation Matthieu (popup)
+	UI :
+		icone / popups 
+	
+	-Guillotine avec ses animations, couper la chaîne (si t'es déter tu peux détecter si ça tombe sur le monstre pour faire un bruit gore + du sang)
+
+JB bruit
 
 -Faire des bruits pour le monstre quand il court, saute, idle quand on est proche de lui (genre respiration dark vador sans masque)
 
@@ -32,3 +48,8 @@ Todo list:
 -Faire des niveaux avec ça
 
 -Faire un niveau de fin qui utilise la mécanique de saut du monstre pour le tuer.
+
+
+Done :
+
+-Donner du feedback sur la chaîne et son extension ( https://github.com/Gad3lan/GGJ2020/blob/master/shaders/ghost.shader pour un shader de transparence/warp fantomatique)
