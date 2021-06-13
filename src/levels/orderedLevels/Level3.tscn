@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/world/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/world/monster/monster.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/levelSelector/deathPopup/deathPopup.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/levelSelector/victory/VictoryPopup.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/levelSelector/deathAnim/DeathAnimationPopup.tscn" type="PackedScene" id=11]
 
 [node name="Node2D2" type="Node2D"]
 position = Vector2( 1, 0 )
@@ -80,6 +81,8 @@ margin_right = -252.557
 margin_bottom = -147.846
 
 [node name="VictoryPopup" parent="CanvasLayer" instance=ExtResource( 10 )]
+
+[node name="DeathAnimationPopup" parent="CanvasLayer" instance=ExtResource( 11 )]
 
 [node name="Guillotine" parent="." instance=ExtResource( 7 )]
 position = Vector2( 440.98, -288.309 )
