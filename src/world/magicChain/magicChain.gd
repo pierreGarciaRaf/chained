@@ -10,18 +10,19 @@ var tenseTrhesholdForEffectsToAppear = .4
 
 func build():
 	$Line2D.clear_points()
-	$Line2D.add_point(monster.global_position)
 	$Line2D.add_point(player.global_position)
+	$Line2D.add_point(monster.global_position)
 
 func _ready():
-	$AudioStreamPlayer2D.play("0")
+	pass
+#	$AudioStreamPlayer2D.play("0")
 
 func getChainLength():
 	return monster.global_position.distance_to(player.global_position)
 
 func _process(delta):
-	$Line2D.set_point_position(0, monster.global_position)
-	$Line2D.set_point_position(1, player.global_position)
+	$Line2D.set_point_position(1, monster.global_position)
+	$Line2D.set_point_position(0, player.global_position)
 	$AudioStreamPlayer2D.global_position = player.global_position
 
 	

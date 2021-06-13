@@ -36,7 +36,12 @@ margin_top = -120.0
 margin_right = 221.5
 margin_bottom = 120.0
 
-[node name="DeathPopup" parent="." instance=ExtResource( 8 )]
+[node name="DeathPopup" parent="CanvasLayer" instance=ExtResource( 8 )]
+visible = true
+margin_left = -695.557
+margin_top = -387.846
+margin_right = -252.557
+margin_bottom = -147.846
 
 [node name="player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 222.187, 262.162 )
