@@ -27,3 +27,5 @@ width = 16.0
 default_color = Color( 0.4, 0.501961, 1, 1 )
 texture = ExtResource( 1 )
 texture_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
