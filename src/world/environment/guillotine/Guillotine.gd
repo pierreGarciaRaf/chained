@@ -2,6 +2,7 @@ extends Node2D
 
 signal guillotine_entered(body)
 signal safe_place_entered(body)
+signal guillotine_fallen()
 
 var fallen=false
 func _ready():
@@ -23,3 +24,4 @@ func fall():
 
 func _on_BladeAnimation_animation_finished(anim_name):
 	fallen=true
+	emit_signal("guillotine_fallen")

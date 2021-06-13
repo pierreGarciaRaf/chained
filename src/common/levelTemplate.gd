@@ -28,6 +28,7 @@ func _ready():
 	if guillotine:
 		guillotine.connect('guillotine_entered',self,'on_guillotine_entered')
 		guillotine.connect('safe_place_entered',self,'on_safe_place_entered')
+		guillotine.connect('guillotine_fallen',self,'on_guillotine_fallen')
 	else:
 		print('WARNING : no guillotine')
 		
@@ -48,3 +49,14 @@ func on_safe_place_entered(body):
 	guillotine.fall()
 	#break_chain(guillotine.global_position)
 	#end_of_level(), unlock next level
+
+func on_guillotine_fallen():
+	end_level()
+
+
+func end_level():
+	$CanvasModulate.visible=false # otherwise popup is hidden
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	get_tree().paused = true
+	
+	$EndLevelPopup.popup_centered()
