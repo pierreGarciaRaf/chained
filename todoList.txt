@@ -1,0 +1,34 @@
+Todo list:
+(dans le sens des priorités)
+-Fin de niveau (mort/victoire)
+	-Guillotine avec ses animations, couper la chaîne (si t'es déter tu peux détecter si ça tombe sur le monstre pour faire un bruit gore + du sang)
+	-Anim fin de niveau (demander à Matthieu de faire une anim de victoire)
+
+-Donner du feedback sur la chaîne et son extension ( https://github.com/Gad3lan/GGJ2020/blob/master/shaders/ghost.shader pour un shader de transparence/warp fantomatique)
+
+-Faire des bruits pour le monstre quand il court, saute, idle quand on est proche de lui (genre respiration dark vador sans masque)
+
+
+-Faire un premier export Windows & Mac avec 3 niveaux (il faut donc ajouter un niveau!)
+
+
+-Bruits pour les torches quand elles sont éteintes, quand on est à côté
+
+-Bruit pour le joueur lorsqu'il marche
+
+-Skinner la page itch.io du projet
+
+
+-Trouver une façon de faire une navigation map potable pour le monstre : Actuellement il collisionne pas avec les murs parce que la navigation map ne prend pas en compte sa taille et il se bloque dans les murs si il suit son chemin avec la collision activée.
+
+-Lier ce que matthieu a fait pour l'interface du jeu
+
+
+-Faire les niveaux designés par Matthieu avec les mécaniques actuelles
+
+
+-Rajouter les poussins/murs destructibles
+
+-Faire des niveaux avec ça
+
+-Faire un niveau de fin qui utilise la mécanique de saut du monstre pour le tuer.

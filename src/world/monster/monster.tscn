@@ -40,16 +40,6 @@ animations = [ {
 "name": "jump",
 "speed": 25.0
 }, {
-"frames": [ ExtResource( 24 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "walkingFront",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "runningFront",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "runningBack",
@@ -59,11 +49,22 @@ animations = [ {
 "loop": true,
 "name": "walkingBack",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "runningFront",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "walkingFront",
+"speed": 5.0
 } ]
 
 [node name="monster" type="KinematicBody2D"]
+z_index = 3
 collision_layer = 12
-collision_mask = 3
+collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

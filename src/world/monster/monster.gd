@@ -24,6 +24,8 @@ var distJump = 32+16
 
 var nav2D:Navigation2D
 
+var pathVisualRepresentation : Line2D
+
 signal player_dead
 
 
@@ -32,7 +34,7 @@ var torchToPutOut : Node2D = null
 func _ready():
 	player = get_node(playerPath)
 	nav2D = get_node(nav2DPath)
-	build_chain_to_player(nav2D)
+	build_chain_to_player()
 
 
 
@@ -44,6 +46,13 @@ func get_to_player():
 		pathToFollow = nav2D.get_simple_path(self.position, player.position)
 		pathPointIndex = 1
 		lastPlayerPos = player.position
+		if get_tree().is_debugging_collisions_hint() :
+			if pathVisualRepresentation:
+				pathVisualRepresentation.queue_free()
+			pathVisualRepresentation = Line2D.new()
+			pathVisualRepresentation.width = 8
+			pathVisualRepresentation.points = pathToFollow
+			get_parent().add_child(pathVisualRepresentation)
 	elif has_to_change_index():
 		pathPointIndex +=1
 		pathPointIndex = min(pathPointIndex, pathToFollow.size()-1)
@@ -63,11 +72,12 @@ func idle():
 	velocity = Vector2.ZERO
 
 
-func build_chain_to_player(navigation2D : Navigation2D):
+func build_chain_to_player():
 	chain = magicChainRes.instance()
 	chain.monster = self
 	chain.player = player
 	chain.build()
+	chain.z_index = 1
 	get_parent().call_deferred("add_child",chain)
 
 

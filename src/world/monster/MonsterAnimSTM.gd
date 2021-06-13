@@ -27,9 +27,9 @@ func _enter_state(new_state,previous_state):
 				animatedSprite.frame = 0
 				animatedSprite.self_modulate = Color("2eb7f2")
 			states.walkNorthSide:
-				animatedSprite.play("walkingUp")
+				animatedSprite.play("walkingBack")
 			states.walkSouthSide:
-				animatedSprite.play("walkingDown")
+				animatedSprite.play("walkingFront")
 			states.runNorthSide:
 				animatedSprite.play("runningBack")
 			states.runSouthSide:

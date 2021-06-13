@@ -42,7 +42,7 @@ func _get_transition(_delta):
 				if parent.canJumpOnPlayer():
 					return states.jump_on_player
 				else:
-					return states.idle
+					return states.getting_up_the_chain
 		states.get_to_torch:
 			if parent.close_enough_to_torch():
 				return states.put_out_torch
