@@ -44,12 +44,12 @@ __meta__ = {
 [node name="GridContainer" type="GridContainer" parent="Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 39.4545
-margin_top = 2.91888
-margin_right = 403.455
-margin_bottom = -96.0811
+margin_left = 25.0
+margin_top = 32.0
+margin_right = -18.0
+margin_bottom = -19.0
 theme = ExtResource( 6 )
-columns = 3
+columns = 4
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -75,21 +75,28 @@ disabled = false
 text = "filledOnReady"
 
 [node name="buttonToLevel3" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_top = 20.0
-margin_right = 208.0
-margin_bottom = 36.0
+margin_left = 636.0
+margin_right = 844.0
+margin_bottom = 16.0
 disabled = false
 text = "filledOnReady"
 
 [node name="buttonToLevel4" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 212.0
 margin_top = 20.0
-margin_right = 420.0
+margin_right = 208.0
 margin_bottom = 36.0
 disabled = false
 text = "filledOnReady"
 
 [node name="buttonToLevel5" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 212.0
+margin_top = 20.0
+margin_right = 420.0
+margin_bottom = 36.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel6" parent="Panel/GridContainer" instance=ExtResource( 1 )]
 margin_left = 424.0
 margin_top = 20.0
 margin_right = 632.0
@@ -97,33 +104,26 @@ margin_bottom = 36.0
 disabled = false
 text = "filledOnReady"
 
-[node name="buttonToLevel6" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_top = 40.0
-margin_right = 208.0
-margin_bottom = 56.0
-disabled = false
-text = "filledOnReady"
-
 [node name="buttonToLevel7" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 212.0
-margin_top = 40.0
-margin_right = 420.0
-margin_bottom = 56.0
+margin_left = 636.0
+margin_top = 20.0
+margin_right = 844.0
+margin_bottom = 36.0
 disabled = false
 text = "filledOnReady"
 
 [node name="buttonToLevel8" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 424.0
 margin_top = 40.0
-margin_right = 632.0
+margin_right = 208.0
 margin_bottom = 56.0
 disabled = false
 text = "filledOnReady"
 
 [node name="buttonToLevel9" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_top = 60.0
-margin_right = 208.0
-margin_bottom = 76.0
+margin_left = 212.0
+margin_top = 40.0
+margin_right = 420.0
+margin_bottom = 56.0
 disabled = false
 text = "filledOnReady"
 
@@ -133,6 +133,5 @@ volume_db = -10.0
 
 [node name="SoundTimer" type="Timer" parent="."]
 one_shot = true
-
 [connection signal="finished" from="Introduction" to="." method="_on_Introduction_finished"]
 [connection signal="timeout" from="SoundTimer" to="." method="_on_SoundTimer_timeout"]
