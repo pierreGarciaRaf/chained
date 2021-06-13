@@ -9,7 +9,7 @@
 [ext_resource path="res://src/levelSelector/endLevel/endLevelPopup.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/levelSelector/deathPopup/deathPopup.tscn" type="PackedScene" id=8]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 position = Vector2( 1, 0 )
 script = ExtResource( 4 )
 tileMapPath = NodePath("Navigation2D/TileMap")

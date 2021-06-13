@@ -1,12 +1,29 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/world/chain/chainwhole.png" type="Texture" id=1]
 [ext_resource path="res://src/world/magicChain/magicChain.gd" type="Script" id=2]
+[ext_resource path="res://src/world/magicChain/magic_chain.shader" type="Shader" id=3]
+
+[sub_resource type="OpenSimplexNoise" id=2]
+octaves = 1
+period = 100.0
+
+[sub_resource type="NoiseTexture" id=3]
+noise = SubResource( 2 )
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/tenseFactor = 1.0
+shader_param/noise = SubResource( 3 )
 
 [node name="MagicChain" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Line2D" type="Line2D" parent="."]
+material = SubResource( 1 )
+position = Vector2( 0.0804405, 1.76976 )
+points = PoolVector2Array( 0, 0, 50, 0 )
 width = 16.0
+default_color = Color( 0.4, 0.501961, 1, 1 )
 texture = ExtResource( 1 )
 texture_mode = 1
