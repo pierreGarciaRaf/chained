@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/monster_little_growl.wav-ed68e0905d4c59c102c691eb2e7c5862.sample"
+
+[deps]
+
+source_file="res://src/world/monster/monster_little_growl.wav"
+dest_files=[ "res://.import/monster_little_growl.wav-ed68e0905d4c59c102c691eb2e7c5862.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
