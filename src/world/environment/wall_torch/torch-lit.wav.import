@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/torch-lit.wav-6824262cf7c4670df7c4341833c6b3ab.sample"
+
+[deps]
+
+source_file="res://src/world/environment/wall_torch/torch-lit.wav"
+dest_files=[ "res://.import/torch-lit.wav-6824262cf7c4670df7c4341833c6b3ab.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
