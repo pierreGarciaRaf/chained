@@ -9,7 +9,7 @@ var player
 var guillotine
 
 func _ready():
-	$CanvasModulate.visible=true
+#	$CanvasModulate.visible=true
 	get_tree().paused = false
 	
 	tileMap = get_node(tileMapPath)
@@ -20,7 +20,7 @@ func _ready():
 	tileMapForLightRcast.name = "lightRcastMap"
 	
 	(tileMapForLightRcast).tile_set = preload("res://src/world/environment/walls&Floor/blueTilesetLightCollisions.tres")
-	tileMapForLightRcast.show_collision = false
+	
 	tileMap.get_parent().add_child(tileMapForLightRcast)
 	
 	# Referencing key children
