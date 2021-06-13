@@ -59,12 +59,17 @@ func setLit(value):
 		$AnimationPlayer.play("light")
 		($monsterDetector/CollisionShape2D as CollisionShape2D).disabled = false
 		$playerDetector/CollisionShape2D.disabled = true
+		$Light_on.play()
 	else:
 		$AnimationPlayer.play("putOut")
 		$RayCast2D.enabled = false
 		$monsterDetector/CollisionShape2D.disabled = true
 		$playerDetector/CollisionShape2D.disabled = false
+		$Light_off.play()
 	lit = value
+
+func _on_Light_on_finished():
+	$Light_lit.play()
 
 func _on_playerDetector_body_entered(body):
 	if isPlayer(body):
@@ -73,5 +78,8 @@ func _on_playerDetector_body_entered(body):
 func _on_playerDetector_body_exited(body):
 	if isPlayer(body):
 		player = null
+
+
+
 
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_lit.tres" type="Texture" id=1]
 [ext_resource path="res://src/world/environment/fire/cheap_anim.tres" type="SpriteFrames" id=2]
@@ -6,6 +6,9 @@
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.gd" type="Script" id=4]
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_unlit.tres" type="Texture" id=5]
 [ext_resource path="res://src/assets/PressStart2P.tres" type="DynamicFont" id=6]
+[ext_resource path="res://src/world/environment/wall_torch/torch-lit-on.wav" type="AudioStream" id=7]
+[ext_resource path="res://src/world/environment/wall_torch/torch-lit-off.wav" type="AudioStream" id=8]
+[ext_resource path="res://src/world/environment/wall_torch/torch-lit.wav" type="AudioStream" id=9]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 1
@@ -13,7 +16,7 @@ light_mode = 1
 [sub_resource type="CircleShape2D" id=2]
 radius = 53.8903
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=3]
 resource_name = "kill"
 tracks/0/type = "value"
 tracks/0/path = NodePath("generalLight:energy")
@@ -69,8 +72,7 @@ tracks/3/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "light"
+[sub_resource type="Animation" id=4]
 tracks/0/type = "value"
 tracks/0/path = NodePath("generalLight:energy")
 tracks/0/interp = 1
@@ -120,7 +122,7 @@ tracks/3/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 tracks/0/type = "value"
 tracks/0/path = NodePath("generalLight:energy")
 tracks/0/interp = 1
@@ -170,10 +172,10 @@ tracks/3/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="CircleShape2D" id=5]
+[sub_resource type="CircleShape2D" id=6]
 radius = 27.1445
 
-[sub_resource type="CanvasItemMaterial" id=6]
+[sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 1
 
 [node name="wall_torch" type="Node2D"]
@@ -187,7 +189,7 @@ texture = ExtResource( 1 )
 material = SubResource( 1 )
 position = Vector2( -0.0883904, -8.22012 )
 frames = ExtResource( 2 )
-frame = 1
+frame = 7
 playing = true
 
 [node name="generalLight" parent="." instance=ExtResource( 3 )]
@@ -205,20 +207,20 @@ disabled = true
 collision_mask = 20
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/kill = SubResource( 7 )
-anims/light = SubResource( 3 )
-anims/putOut = SubResource( 4 )
+anims/kill = SubResource( 3 )
+anims/light = SubResource( 4 )
+anims/putOut = SubResource( 5 )
 
 [node name="playerDetector" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerDetector"]
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="Label" type="Label" parent="."]
 visible = false
-material = SubResource( 6 )
+material = SubResource( 7 )
 margin_left = -26.5046
 margin_top = -20.5464
 margin_right = 405.495
@@ -230,7 +232,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Light_on" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+bus = "Background"
+
+[node name="Light_off" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+bus = "Background"
+
+[node name="Light_lit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+bus = "Background"
+
 [connection signal="body_entered" from="monsterDetector" to="." method="_on_monsterDetector_body_entered"]
 [connection signal="body_exited" from="monsterDetector" to="." method="_on_monsterDetector_body_exited"]
 [connection signal="body_entered" from="playerDetector" to="." method="_on_playerDetector_body_entered"]
 [connection signal="body_exited" from="playerDetector" to="." method="_on_playerDetector_body_exited"]
+[connection signal="finished" from="Light_on" to="." method="_on_Light_on_finished"]
