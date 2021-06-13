@@ -45,14 +45,6 @@ collision_mask = 6
 playerPath = NodePath("../player")
 nav2DPath = NodePath("../Navigation2D")
 
-[node name="EndLevelPopup" parent="." instance=ExtResource( 8 )]
-margin_left = -214.832
-margin_top = -127.757
-margin_right = 228.167
-margin_bottom = 112.243
-
-[node name="DeathPopup" parent="." instance=ExtResource( 9 )]
-
 [node name="wall_torch3" parent="." instance=ExtResource( 3 )]
 
 [node name="wall_torch4" parent="." instance=ExtResource( 3 )]
@@ -65,3 +57,17 @@ position = Vector2( 362.684, 82.5335 )
 
 [node name="Guillotine" parent="." instance=ExtResource( 7 )]
 position = Vector2( 101.953, 290.683 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="EndLevelPopup" parent="CanvasLayer" instance=ExtResource( 8 )]
+margin_left = -725.832
+margin_top = -427.757
+margin_right = -282.833
+margin_bottom = -187.757
+
+[node name="DeathPopup" parent="CanvasLayer" instance=ExtResource( 9 )]
+margin_left = -695.557
+margin_top = -387.846
+margin_right = -252.557
+margin_bottom = -147.846

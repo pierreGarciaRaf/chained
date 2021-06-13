@@ -4,11 +4,13 @@ extends Node2D
 export var tileMapPath : NodePath
 var tileMap : TileMap
 
-var monster:Monster
+var monster : Monster
 var player
 var guillotine
 
 func _ready():
+	get_tree().paused = false
+	
 	tileMap = get_node(tileMapPath)
 	var tileMapForLightRcast :TileMap= tileMap.duplicate()
 	tileMap.visible = true
@@ -59,14 +61,13 @@ func on_player_dead():
 	if get_tree().paused:
 		return
 	print('player dead')
-	$CanvasModulate.visible=false # otherwise popup is hidden
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().paused = true
-	$DeathPopup.popup_centered()
+	$CanvasLayer/DeathPopup.popup_centered()
 
 func end_level():
-	$CanvasModulate.visible=false # otherwise popup is hidden
+#	$CanvasModulate.visible=false # otherwise popup is hidden
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().paused = true
 	
-	$EndLevelPopup.popup_centered()
+	$CanvasLayer/EndLevelPopup.popup_centered()
