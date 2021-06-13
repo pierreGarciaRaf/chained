@@ -38,6 +38,13 @@ func on_guillotine_entered(body):
 		print('Player about to win')
 	if body== monster:
 		print('Monster killed')
+		#monster.killed_by_guillotine()
+		guillotine.fall()
+		#end_of_level(), unlock next level
+		
 		
 func on_safe_place_entered(body):
 	print('Player wins; cut the chain')
+	guillotine.fall()
+	#break_chain(guillotine.global_position)
+	#end_of_level(), unlock next level

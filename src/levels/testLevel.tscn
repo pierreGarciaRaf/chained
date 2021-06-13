@@ -55,3 +55,4 @@ position = Vector2( 362.684, 82.5335 )
 [node name="BackgroundSound" parent="." instance=ExtResource( 6 )]
 
 [node name="Guillotine" parent="." instance=ExtResource( 7 )]
+position = Vector2( 101.953, 290.683 )
