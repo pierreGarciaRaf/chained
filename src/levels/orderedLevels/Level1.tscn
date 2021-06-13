@@ -43,7 +43,13 @@ nav2DPath = NodePath("../Navigation2D")
 
 [node name="BackgroundSound" parent="." instance=ExtResource( 6 )]
 
-[node name="EndLevelPopup" parent="." instance=ExtResource( 3 )]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="EndLevelPopup" parent="CanvasLayer" instance=ExtResource( 3 )]
+margin_left = -221.5
+margin_top = -120.0
+margin_right = 221.5
+margin_bottom = 120.0
 
 [node name="Guillotine" parent="." instance=ExtResource( 7 )]
 position = Vector2( 152.366, -55.3208 )

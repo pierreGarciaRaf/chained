@@ -55,8 +55,8 @@ func on_guillotine_fallen():
 
 
 func end_level():
-	$CanvasModulate.visible=false # otherwise popup is hidden
+#	$CanvasModulate.visible=false # otherwise popup is hidden
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().paused = true
 	
-	$EndLevelPopup.popup_centered()
+	$CanvasLayer/EndLevelPopup.popup_centered()
