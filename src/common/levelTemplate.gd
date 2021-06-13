@@ -9,7 +9,7 @@ var player
 var guillotine
 
 func _ready():
-	$CanvasModulate.visible=true
+#	$CanvasModulate.visible=true
 	get_tree().paused = false
 	
 	tileMap = get_node(tileMapPath)

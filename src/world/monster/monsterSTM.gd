@@ -22,8 +22,6 @@ func _get_transition(_delta):
 			if parent.isChainTensed():
 				return states.getting_up_the_chain
 		states.getting_up_the_chain:
-			if Input.is_action_just_pressed("ui_cancel"):
-				return states.idle
 			if parent.canJumpOnPlayer():
 				return states.winding_jump
 			if parent.torchToPutOut:

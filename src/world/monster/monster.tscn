@@ -40,14 +40,9 @@ animations = [ {
 "name": "jump",
 "speed": 25.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 24 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 21 ) ],
 "loop": true,
-"name": "runningBack",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "runningFront",
+"name": "walkingFront",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 13 ) ],
@@ -55,9 +50,14 @@ animations = [ {
 "name": "walkingBack",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 24 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 21 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "walkingFront",
+"name": "runningFront",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "runningBack",
 "speed": 5.0
 } ]
 

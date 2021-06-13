@@ -133,5 +133,6 @@ volume_db = -10.0
 
 [node name="SoundTimer" type="Timer" parent="."]
 one_shot = true
+
 [connection signal="finished" from="Introduction" to="." method="_on_Introduction_finished"]
 [connection signal="timeout" from="SoundTimer" to="." method="_on_SoundTimer_timeout"]

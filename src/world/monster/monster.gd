@@ -91,6 +91,8 @@ func isChainTensed():
 
 func canJumpOnPlayer():
 	var collider = $jumpRcast.get_collider()
+	if collider:
+		print(collider.name)
 	return collider != null and collider == player
 
 func _applyVelocity(delta):
@@ -106,8 +108,6 @@ func tryToSeePlayer():
 	if vectToPlayer.length() < distJump:
 		$jumpRcast.enabled = true
 		$jumpRcast.cast_to = vectToPlayer*2
-	else:
-		$jumpRcast.enabled = false
 
 
 
