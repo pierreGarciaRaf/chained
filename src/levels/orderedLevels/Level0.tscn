@@ -57,10 +57,11 @@ playerPath = NodePath("../player")
 nav2DPath = NodePath("../Navigation2D")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 position = Vector2( -256.21, -0.385815 )
 color = Color( 0, 0, 0, 1 )
 
 [node name="BackgroundSound" parent="." instance=ExtResource( 6 )]
 
 [node name="Guillotine" parent="." instance=ExtResource( 3 )]
-position = Vector2( 231.727, -23.526 )
+position = Vector2( 231.862, -7.34843 )

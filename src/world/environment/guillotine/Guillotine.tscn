@@ -4,22 +4,22 @@
 [ext_resource path="res://src/world/environment/guillotine/guillotine.sprites/guillotine.tres" type="Texture" id=2]
 [ext_resource path="res://src/world/environment/guillotine/guillotine.sprites/guillotineblade.tres" type="Texture" id=3]
 
-[sub_resource type="CanvasItemMaterial" id=7]
+[sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 1
 
-[sub_resource type="OccluderPolygon2D" id=6]
+[sub_resource type="OccluderPolygon2D" id=2]
 polygon = PoolVector2Array( -5.27165, 19.9698, -5.03265, 22.2908, -7.03944, 22.0679, -7.0509, 20.0635 )
 
-[sub_resource type="OccluderPolygon2D" id=5]
+[sub_resource type="OccluderPolygon2D" id=3]
 polygon = PoolVector2Array( 5.12285, 19.6889, 5.00128, 22.1421, 7.23105, 21.9192, 7.27666, 19.6889 )
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 6.58488, 7.74057 )
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 40.6581, 25.2294 )
 
-[sub_resource type="Animation" id=3]
-resource_name = "fall_blade"
+[sub_resource type="Animation" id=6]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Blade:position")
 tracks/0/interp = 1
@@ -38,18 +38,18 @@ position = Vector2( 110.056, 72.2267 )
 script = ExtResource( 1 )
 
 [node name="Body" type="Sprite" parent="."]
-material = SubResource( 7 )
+material = SubResource( 1 )
 position = Vector2( -0.236404, 0.118225 )
 texture = ExtResource( 2 )
 
 [node name="left" type="LightOccluder2D" parent="Body"]
 light_mask = 3
-occluder = SubResource( 6 )
+occluder = SubResource( 2 )
 light_mask = 3
 
 [node name="right" type="LightOccluder2D" parent="Body"]
 light_mask = 3
-occluder = SubResource( 5 )
+occluder = SubResource( 3 )
 light_mask = 3
 
 [node name="Blade" type="Sprite" parent="."]
@@ -62,18 +62,18 @@ collision_mask = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Guillotine"]
 position = Vector2( -0.472797, 15.9568 )
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 
 [node name="SafePlace" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SafePlace"]
-position = Vector2( -0.118198, -31.7955 )
-shape = SubResource( 2 )
+position = Vector2( 1.01468, -17.1195 )
+shape = SubResource( 5 )
 
 [node name="BladeAnimation" type="AnimationPlayer" parent="."]
-anims/fall_blade = SubResource( 3 )
+anims/fall_blade = SubResource( 6 )
 
 [connection signal="body_entered" from="Guillotine" to="." method="_on_Guillotine_entered"]
 [connection signal="body_entered" from="SafePlace" to="." method="_on_SafePlace_body_entered"]

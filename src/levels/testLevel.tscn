@@ -61,6 +61,7 @@ position = Vector2( 101.953, 290.683 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="EndLevelPopup" parent="CanvasLayer" instance=ExtResource( 8 )]
+visible = false
 margin_left = -725.832
 margin_top = -427.757
 margin_right = -282.833

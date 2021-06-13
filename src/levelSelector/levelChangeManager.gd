@@ -22,6 +22,6 @@ func changeToNextLevel():
 	changeToLevel(actualLevel + 1)
 
 func get_level_path(levelNumber):
-	return "res://src/levels/orderedLevels/level" + String(levelNumber) + ".tscn"
+	return "res://src/levels/orderedLevels/Level" + String(levelNumber) + ".tscn"
 
 
