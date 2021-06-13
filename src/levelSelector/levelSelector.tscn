@@ -110,40 +110,6 @@ disabled = false
 text = "filledOnReady"
 align = 0
 
-[node name="buttonToLevel6" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 212.0
-margin_top = 40.0
-margin_right = 420.0
-margin_bottom = 56.0
-disabled = false
-text = "filledOnReady"
-
-[node name="buttonToLevel7" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 424.0
-margin_top = 40.0
-margin_right = 632.0
-margin_bottom = 56.0
-disabled = false
-text = "filledOnReady"
-align = 0
-
-[node name="buttonToLevel8" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_top = 60.0
-margin_right = 208.0
-margin_bottom = 76.0
-disabled = false
-text = "filledOnReady"
-align = 0
-
-[node name="buttonToLevel9" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 212.0
-margin_top = 60.0
-margin_right = 420.0
-margin_bottom = 76.0
-disabled = false
-text = "filledOnReady"
-align = 0
-
 [node name="Introduction" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -10.0
