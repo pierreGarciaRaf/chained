@@ -189,7 +189,6 @@ texture = ExtResource( 1 )
 material = SubResource( 1 )
 position = Vector2( -0.0883904, -8.22012 )
 frames = ExtResource( 2 )
-frame = 5
 playing = true
 
 [node name="generalLight" parent="." instance=ExtResource( 3 )]
@@ -227,7 +226,7 @@ margin_right = 405.495
 margin_bottom = -4.5464
 rect_scale = Vector2( 0.15, 0.15 )
 custom_fonts/font = ExtResource( 6 )
-text = "Press E or L to light torch"
+text = "Press Space nearby"
 __meta__ = {
 "_edit_use_anchors_": false
 }
