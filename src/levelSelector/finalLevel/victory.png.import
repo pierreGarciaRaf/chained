@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/papagates.png-035f3a9612dbcc145b2fbe770670af7a.stex"
+path="res://.import/victory.png-a5a24d6f8193459fdfff48fad5f9fd04.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/levelSelector/finalLevel/papagates.png"
-dest_files=[ "res://.import/papagates.png-035f3a9612dbcc145b2fbe770670af7a.stex" ]
+source_file="res://src/levelSelector/finalLevel/victory.png"
+dest_files=[ "res://.import/victory.png-a5a24d6f8193459fdfff48fad5f9fd04.stex" ]
 
 [params]
 

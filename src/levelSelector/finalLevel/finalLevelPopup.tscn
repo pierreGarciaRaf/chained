@@ -1,26 +1,23 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/levelSelector/endLevel/endLevelPopup.gd" type="Script" id=1]
-[ext_resource path="res://src/levelSelector/finalLevel/papagates.png" type="Texture" id=2]
-[ext_resource path="res://src/levelSelector/habillage.png" type="Texture" id=3]
-
-[sub_resource type="StyleBoxTexture" id=1]
-texture = ExtResource( 3 )
-region_rect = Rect2( 0, 0, 1664, 960 )
+[ext_resource path="res://src/levelSelector/finalLevel/victory.png" type="Texture" id=2]
+[ext_resource path="res://src/levelSelector/UI_Panel.tres" type="StyleBox" id=3]
 
 [sub_resource type="StyleBoxFlat" id=2]
 
 [node name="Control" type="PopupPanel"]
 pause_mode = 2
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -345.0
-margin_top = -286.0
-margin_right = 255.0
-margin_bottom = 283.0
-custom_styles/panel = SubResource( 1 )
+margin_left = -300.0
+margin_top = -284.5
+margin_right = 300.0
+margin_bottom = 284.5
+custom_styles/panel = ExtResource( 3 )
 popup_exclusive = true
 script = ExtResource( 1 )
 __meta__ = {
@@ -28,14 +25,14 @@ __meta__ = {
 }
 
 [node name="Control" type="Control" parent="."]
-anchor_left = 0.046
-anchor_top = 0.082
-anchor_right = 0.94
-anchor_bottom = 0.903
-margin_left = -27.6
-margin_top = -46.658
-margin_right = 36.0
-margin_bottom = 55.193
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -300.0
+margin_top = -284.5
+margin_right = 300.0
+margin_bottom = 284.5
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -45,25 +42,25 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -266.221
-margin_top = -241.947
-margin_right = -26.2204
-margin_bottom = -1.94681
+margin_left = -237.44
+margin_top = -40.5754
+margin_right = -7.44043
+margin_bottom = 6.42456
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="getToMenu" type="Button" parent="Control"]
-anchor_left = 1.0
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -139.008
-margin_top = -99.7681
-margin_right = -26.0076
-margin_bottom = -42.7681
+margin_left = -56.5002
+margin_top = -57.0
+margin_right = 56.5002
 custom_styles/normal = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Exit to menu"
