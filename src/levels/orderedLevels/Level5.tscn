@@ -8,7 +8,7 @@
 [ext_resource path="res://src/world/environment/backgroundSound/BackgroundSound.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/world/environment/guillotine/Guillotine.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/levelSelector/deathPopup/deathPopup.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/levelSelector/victory/VictoryPopup.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/levelSelector/finalLevel/finalLevelPopup.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.tscn" type="PackedScene" id=10]
 
 [node name="Node2D" type="Node2D"]

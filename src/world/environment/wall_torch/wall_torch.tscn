@@ -13,7 +13,7 @@ light_mode = 1
 [sub_resource type="CircleShape2D" id=2]
 radius = 53.8903
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=3]
 resource_name = "kill"
 tracks/0/type = "value"
 tracks/0/path = NodePath("generalLight:energy")
@@ -69,8 +69,7 @@ tracks/3/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "light"
+[sub_resource type="Animation" id=4]
 tracks/0/type = "value"
 tracks/0/path = NodePath("generalLight:energy")
 tracks/0/interp = 1
@@ -120,7 +119,7 @@ tracks/3/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 tracks/0/type = "value"
 tracks/0/path = NodePath("generalLight:energy")
 tracks/0/interp = 1
@@ -170,10 +169,10 @@ tracks/3/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="CircleShape2D" id=5]
+[sub_resource type="CircleShape2D" id=6]
 radius = 27.1445
 
-[sub_resource type="CanvasItemMaterial" id=6]
+[sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 1
 
 [node name="wall_torch" type="Node2D"]
@@ -187,7 +186,6 @@ texture = ExtResource( 1 )
 material = SubResource( 1 )
 position = Vector2( -0.0883904, -8.22012 )
 frames = ExtResource( 2 )
-frame = 1
 playing = true
 
 [node name="generalLight" parent="." instance=ExtResource( 3 )]
@@ -205,27 +203,27 @@ disabled = true
 collision_mask = 20
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/kill = SubResource( 7 )
-anims/light = SubResource( 3 )
-anims/putOut = SubResource( 4 )
+anims/kill = SubResource( 3 )
+anims/light = SubResource( 4 )
+anims/putOut = SubResource( 5 )
 
 [node name="playerDetector" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerDetector"]
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="Label" type="Label" parent="."]
 visible = false
-material = SubResource( 6 )
+material = SubResource( 7 )
 margin_left = -26.5046
 margin_top = -20.5464
 margin_right = 405.495
 margin_bottom = -4.5464
 rect_scale = Vector2( 0.15, 0.15 )
 custom_fonts/font = ExtResource( 6 )
-text = "Press E or L to light torch"
+text = "Press Space nearby"
 __meta__ = {
 "_edit_use_anchors_": false
 }
