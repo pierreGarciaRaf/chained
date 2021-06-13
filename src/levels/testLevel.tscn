@@ -34,7 +34,6 @@ collision_layer = 2
 collision_mask = 7
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 position = Vector2( -256.21, -0.385815 )
 color = Color( 0, 0, 0, 1 )
 
