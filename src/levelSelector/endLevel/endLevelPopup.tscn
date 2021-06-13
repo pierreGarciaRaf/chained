@@ -14,7 +14,6 @@ region_rect = Rect2( 0, 0, 1664, 960 )
 
 [node name="EndLevelPopup" type="PopupPanel"]
 pause_mode = 2
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5

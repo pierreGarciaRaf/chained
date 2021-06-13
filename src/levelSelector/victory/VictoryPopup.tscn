@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/levelSelector/victory/VictoryPopupSpriteFrames.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://src/levelSelector/victory/VictoryPopup.gd" type="Script" id=9]
+
+[node name="VictoryPopup" type="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Control"]
+pause_mode = 2
+position = Vector2( 544.912, 307.998 )
+scale = Vector2( 4.38364, 4.61666 )
+frames = ExtResource( 1 )
+frame = 7
+
+[connection signal="about_to_show" from="." to="." method="_on_VictoryPopup_about_to_show"]
+[connection signal="animation_finished" from="Control/AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
