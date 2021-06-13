@@ -21,7 +21,7 @@ onready var magicChainRes = preload("res://src/world/magicChain/magicChain.tscn"
 export var speed = 150
 
 export var nav2DPath:NodePath
-var requiredDistForPath = 1.0
+var requiredDistForPath = 2
 var distJump = 32+16
 
 var nav2D:Navigation2D

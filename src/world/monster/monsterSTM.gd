@@ -53,6 +53,7 @@ func _enter_state(new_state,previous_state):
 			print(states.keys()[previous_state], " --> ", states.keys()[new_state])
 			match previous_state:
 				states.jump_on_player:
+					((get_node("../CollisionShape2D") as CollisionShape2D).shape as CircleShape2D).radius = 3
 					(parent as KinematicBody2D).set_collision_mask_bit(0 , false)
 			match new_state:
 				states.winding_jump:
@@ -61,6 +62,7 @@ func _enter_state(new_state,previous_state):
 					parent.put_out_torch()
 					$Timer.start(1)
 				states.jump_on_player:
+					((get_node("../CollisionShape2D") as CollisionShape2D).shape as CircleShape2D).radius = 1
 					(parent as KinematicBody2D).set_collision_mask_bit(0 , true)
 					$Timer.start(1.0)
 
