@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/world/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/world/monster/monster.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/levelSelector/endLevel/endLevelPopup.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/levelSelector/deathPopup/deathPopup.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/levelSelector/victory/VictoryPopup.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/levelSelector/deathAnim/DeathAnimationPopup.tscn" type="PackedScene" id=11]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 1, 0 )
@@ -60,6 +61,8 @@ position = Vector2( 362.684, 82.5335 )
 position = Vector2( 101.953, 290.683 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DeathAnimationPopup" parent="CanvasLayer" instance=ExtResource( 11 )]
 
 [node name="EndLevelPopup" parent="CanvasLayer" instance=ExtResource( 8 )]
 margin_left = -725.832

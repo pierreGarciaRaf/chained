@@ -66,9 +66,16 @@ func on_victory_animation_ended():
 
 ### Player dead
 func on_player_dead():
-	if get_tree().paused:
-		return
-	print('player dead')
+	start_death_animation()
+	
+
+func start_death_animation():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().paused = true
+	$CanvasLayer/DeathAnimationPopup.connect('animation_ended',self,'on_death_animation_ended')
+	$CanvasLayer/DeathAnimationPopup.popup_centered()
+
+	
+func on_death_animation_ended():
 	$CanvasLayer/DeathPopup.popup_centered()
+
