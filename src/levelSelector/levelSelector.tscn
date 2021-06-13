@@ -32,10 +32,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 339.703
-margin_top = 6.10205
-margin_right = 819.703
-margin_bottom = 321.102
+margin_left = -240.0
+margin_top = -157.5
+margin_right = 240.0
+margin_bottom = 157.5
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -43,10 +43,10 @@ __meta__ = {
 
 [node name="GridContainer" type="GridContainer" parent="Panel"]
 anchor_bottom = 1.0
-margin_left = 9.94348
-margin_top = 92.144
-margin_right = 217.943
-margin_bottom = 92.144
+margin_left = -224.402
+margin_top = 331.15
+margin_right = 407.598
+margin_bottom = 331.15
 theme = ExtResource( 6 )
 columns = 3
 __meta__ = {
@@ -61,6 +61,22 @@ text = "A"
 align = 0
 
 [node name="buttonToLevel1" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 212.0
+margin_right = 420.0
+margin_bottom = 16.0
+disabled = false
+text = "filledOnReady"
+align = 0
+
+[node name="buttonToLevel2" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 424.0
+margin_right = 632.0
+margin_bottom = 16.0
+disabled = false
+text = "filledOnReady"
+align = 0
+
+[node name="buttonToLevel3" parent="Panel/GridContainer" instance=ExtResource( 1 )]
 margin_top = 20.0
 margin_right = 208.0
 margin_bottom = 36.0
@@ -68,7 +84,25 @@ disabled = false
 text = "filledOnReady"
 align = 0
 
-[node name="buttonToLevel2" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+[node name="buttonToLevel4" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 212.0
+margin_top = 20.0
+margin_right = 420.0
+margin_bottom = 36.0
+disabled = false
+text = "filledOnReady"
+align = 0
+
+[node name="buttonToLevel4" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 424.0
+margin_top = 20.0
+margin_right = 632.0
+margin_bottom = 36.0
+disabled = false
+text = "filledOnReady"
+align = 0
+
+[node name="buttonToLevel5" parent="Panel/GridContainer" instance=ExtResource( 1 )]
 margin_top = 40.0
 margin_right = 208.0
 margin_bottom = 56.0
@@ -76,7 +110,24 @@ disabled = false
 text = "filledOnReady"
 align = 0
 
-[node name="buttonToLevel3" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+[node name="buttonToLevel6" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 212.0
+margin_top = 40.0
+margin_right = 420.0
+margin_bottom = 56.0
+disabled = false
+text = "filledOnReady"
+
+[node name="buttonToLevel7" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 424.0
+margin_top = 40.0
+margin_right = 632.0
+margin_bottom = 56.0
+disabled = false
+text = "filledOnReady"
+align = 0
+
+[node name="buttonToLevel8" parent="Panel/GridContainer" instance=ExtResource( 1 )]
 margin_top = 60.0
 margin_right = 208.0
 margin_bottom = 76.0
@@ -84,60 +135,10 @@ disabled = false
 text = "filledOnReady"
 align = 0
 
-[node name="buttonToLevel4" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_top = 80.0
-margin_right = 208.0
-margin_bottom = 96.0
-disabled = false
-text = "filledOnReady"
-align = 0
-
-[node name="buttonToLevel4" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 212.0
-margin_top = 20.0
-margin_right = 420.0
-margin_bottom = 36.0
-disabled = false
-text = "filledOnReady"
-align = 0
-
-[node name="buttonToLevel5" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 424.0
-margin_top = 20.0
-margin_right = 632.0
-margin_bottom = 36.0
-disabled = false
-text = "filledOnReady"
-align = 0
-
-[node name="buttonToLevel6" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_top = 40.0
-margin_right = 208.0
-margin_bottom = 56.0
-disabled = false
-text = "filledOnReady"
-
-[node name="buttonToLevel7" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 212.0
-margin_top = 40.0
-margin_right = 420.0
-margin_bottom = 56.0
-disabled = false
-text = "filledOnReady"
-align = 0
-
-[node name="buttonToLevel8" parent="Panel/GridContainer" instance=ExtResource( 1 )]
-margin_left = 424.0
-margin_top = 40.0
-margin_right = 632.0
-margin_bottom = 56.0
-disabled = false
-text = "filledOnReady"
-align = 0
-
 [node name="buttonToLevel9" parent="Panel/GridContainer" instance=ExtResource( 1 )]
+margin_left = 212.0
 margin_top = 60.0
-margin_right = 208.0
+margin_right = 420.0
 margin_bottom = 76.0
 disabled = false
 text = "filledOnReady"

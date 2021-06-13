@@ -39,7 +39,6 @@ margin_right = 221.5
 margin_bottom = 120.0
 
 [node name="DeathPopup" parent="CanvasLayer" instance=ExtResource( 8 )]
-visible = true
 margin_left = -695.557
 margin_top = -387.846
 margin_right = -252.557
@@ -60,7 +59,6 @@ playerPath = NodePath("../player")
 nav2DPath = NodePath("../Navigation2D")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 position = Vector2( -256.21, -0.385815 )
 color = Color( 0, 0, 0, 1 )
 
