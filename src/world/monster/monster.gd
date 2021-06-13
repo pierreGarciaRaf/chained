@@ -121,7 +121,7 @@ func close_enough_to_torch():
 	return self.global_position.distance_to(torchToPutOut.global_position) < requiredDistance
 
 func put_out_torch():
-	torchToPutOut.kill()
+	torchToPutOut.put_out()
 	torchToPutOut = null
 
 
