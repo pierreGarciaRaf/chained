@@ -61,7 +61,6 @@ func on_player_dead():
 	if get_tree().paused:
 		return
 	print('player dead')
-	$CanvasModulate.visible=false # otherwise popup is hidden
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().paused = true
 	$CanvasLayer/DeathPopup.popup_centered()
