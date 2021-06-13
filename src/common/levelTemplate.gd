@@ -4,7 +4,7 @@ extends Node2D
 export var tileMapPath : NodePath
 var tileMap : TileMap
 
-var monster
+var monster:Monster
 var player
 var guillotine
 
@@ -23,6 +23,8 @@ func _ready():
 	# Referencing key children
 	player=get_node('player')
 	monster=get_node('monster')
+	
+	monster.connect('player_dead',self, 'on_player_dead')
 	
 	guillotine = get_node("Guillotine")
 	if guillotine:
@@ -53,6 +55,14 @@ func on_safe_place_entered(body):
 func on_guillotine_fallen():
 	end_level()
 
+func on_player_dead():
+	if get_tree().paused:
+		return
+	print('player dead')
+	$CanvasModulate.visible=false # otherwise popup is hidden
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	get_tree().paused = true
+	$DeathPopup.popup_centered()
 
 func end_level():
 	$CanvasModulate.visible=false # otherwise popup is hidden

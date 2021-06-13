@@ -1,4 +1,5 @@
 extends KinematicBody2D
+class_name Monster
 
 var velocity = Vector2.ZERO
 
