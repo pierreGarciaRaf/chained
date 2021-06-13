@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/levelSelector/deathPopup/deathPopup.gd" type="Script" id=1]
+[ext_resource path="res://src/assets/PressStart2P.tres" type="DynamicFont" id=2]
+[ext_resource path="res://src/assets/UITheme.tres" type="Theme" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.870588, 0.219608, 0.219608, 0.0705882 )
@@ -13,6 +15,7 @@ bg_color = Color( 0.768627, 0.137255, 0.137255, 0.54902 )
 
 [node name="DeathPopup" type="PopupPanel"]
 pause_mode = 2
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -21,6 +24,7 @@ margin_left = -184.557
 margin_top = -87.8464
 margin_right = 258.443
 margin_bottom = 152.154
+theme = ExtResource( 3 )
 custom_styles/panel = SubResource( 1 )
 popup_exclusive = true
 script = ExtResource( 1 )
@@ -44,10 +48,10 @@ __meta__ = {
 [node name="Label" type="Label" parent="Control"]
 anchor_left = 0.498445
 anchor_right = 0.498445
-margin_left = -235.811
-margin_top = 46.1651
-margin_right = 237.189
-margin_bottom = 192.165
+margin_left = -241.311
+margin_top = 14.9972
+margin_right = 231.689
+margin_bottom = 160.997
 grow_horizontal = 0
 custom_colors/font_color = Color( 0.768627, 0.137255, 0.137255, 1 )
 text = "You are dead"
@@ -62,11 +66,12 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -146.826
-margin_top = -146.679
-margin_right = -33.8259
-margin_bottom = -89.6791
+margin_left = -202.876
+margin_top = -108.963
+margin_right = -10.8759
+margin_bottom = -51.9633
 custom_styles/normal = SubResource( 2 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Exit to menu"
 __meta__ = {
@@ -76,11 +81,12 @@ __meta__ = {
 [node name="restart" type="Button" parent="Control"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 37.3127
-margin_top = -146.958
-margin_right = 150.313
-margin_bottom = -89.9576
+margin_left = 7.97823
+margin_top = -108.718
+margin_right = 215.978
+margin_bottom = -51.718
 custom_styles/normal = SubResource( 3 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Restart level"
 __meta__ = {
