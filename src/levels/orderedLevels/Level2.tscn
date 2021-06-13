@@ -68,8 +68,13 @@ margin_right = 1.0
 [node name="Guillotine" parent="." instance=ExtResource( 7 )]
 position = Vector2( 23.8422, 327.72 )
 
+[node name="SafePlace" parent="Guillotine" index="3"]
+position = Vector2( 2.00226, 62.07 )
+
 [node name="wall_torch" parent="." instance=ExtResource( 9 )]
 position = Vector2( 262.672, 166.654 )
 
 [node name="wall_torch4" parent="." instance=ExtResource( 9 )]
 position = Vector2( 583.701, 169.324 )
+
+[editable path="Guillotine"]
