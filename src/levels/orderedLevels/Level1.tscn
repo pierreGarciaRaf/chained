@@ -34,6 +34,7 @@ collision_layer = 2
 collision_mask = 7
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 position = Vector2( -256.21, -0.385815 )
 color = Color( 0, 0, 0, 1 )
 
@@ -47,6 +48,7 @@ nav2DPath = NodePath("../Navigation2D")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="EndLevelPopup" parent="CanvasLayer" instance=ExtResource( 3 )]
+visible = false
 margin_left = -221.5
 margin_top = -120.0
 margin_right = 221.5
@@ -59,4 +61,4 @@ margin_right = -252.557
 margin_bottom = -147.846
 
 [node name="Guillotine" parent="." instance=ExtResource( 7 )]
-position = Vector2( 152.366, -55.3208 )
+position = Vector2( 152.035, -40.5693 )
