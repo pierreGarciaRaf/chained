@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_lit.tres" type="Texture" id=1]
 [ext_resource path="res://src/world/environment/fire/cheap_anim.tres" type="SpriteFrames" id=2]
 [ext_resource path="res://src/world/environment/light/generalLight.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.gd" type="Script" id=4]
 [ext_resource path="res://src/world/environment/wall_torch/wall_torch.sprites/walltorch_unlit.tres" type="Texture" id=5]
+[ext_resource path="res://src/assets/PressStart2P.tres" type="DynamicFont" id=6]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 1
@@ -12,7 +13,7 @@ light_mode = 1
 [sub_resource type="CircleShape2D" id=2]
 radius = 53.8903
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=3]
 resource_name = "light"
 tracks/0/type = "value"
 tracks/0/path = NodePath("generalLight:energy")
@@ -50,8 +51,20 @@ tracks/2/keys = {
 "update": 1,
 "values": [ ExtResource( 1 ) ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Label:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=4]
 tracks/0/type = "value"
 tracks/0/path = NodePath("generalLight:energy")
 tracks/0/interp = 1
@@ -88,9 +101,24 @@ tracks/2/keys = {
 "update": 1,
 "values": [ ExtResource( 5 ) ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Label:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.9 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="CircleShape2D" id=5]
 radius = 27.1445
+
+[sub_resource type="CanvasItemMaterial" id=6]
+light_mode = 1
 
 [node name="wall_torch" type="Node2D"]
 script = ExtResource( 4 )
@@ -103,10 +131,11 @@ texture = ExtResource( 1 )
 material = SubResource( 1 )
 position = Vector2( -0.0883904, -8.22012 )
 frames = ExtResource( 2 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="generalLight" parent="." instance=ExtResource( 3 )]
+energy = 0.0
 
 [node name="monsterDetector" type="Area2D" parent="."]
 collision_layer = 20
@@ -120,8 +149,8 @@ disabled = true
 collision_mask = 20
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/light = SubResource( 6 )
-anims/putOut = SubResource( 7 )
+anims/light = SubResource( 3 )
+anims/putOut = SubResource( 4 )
 
 [node name="playerDetector" type="Area2D" parent="."]
 collision_layer = 2
@@ -129,6 +158,19 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="playerDetector"]
 shape = SubResource( 5 )
+
+[node name="Label" type="Label" parent="."]
+material = SubResource( 6 )
+margin_left = -26.5046
+margin_top = -20.5464
+margin_right = 405.495
+margin_bottom = -4.5464
+rect_scale = Vector2( 0.15, 0.15 )
+custom_fonts/font = ExtResource( 6 )
+text = "Press E or L to light torch"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="body_entered" from="monsterDetector" to="." method="_on_monsterDetector_body_entered"]
 [connection signal="body_exited" from="monsterDetector" to="." method="_on_monsterDetector_body_exited"]
