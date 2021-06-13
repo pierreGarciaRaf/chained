@@ -12,16 +12,7 @@ func _ready():
 	set_state(states.idle)
 
 
-func _enter_state(new_state,previous_state):
-	if new_state != null and previous_state != null:
-		if new_state != previous_state:
-			print(states.keys()[previous_state], " --> ", states.keys()[new_state])
-			match new_state:
-				states.winding_jump:
-					$Timer.start(0.5)
-				states.put_out_torch:
-					parent.put_out_torch()
-					$Timer.start(1)
+
 
 
 
@@ -38,6 +29,8 @@ func _get_transition(_delta):
 			if parent.torchToPutOut:
 				return states.get_to_torch
 		states.winding_jump:
+			if parent.torchToPutOut:
+				return states.get_to_torch
 			if $Timer.time_left == 0 :
 				if parent.canJumpOnPlayer():
 					return states.jump_on_player
@@ -49,7 +42,27 @@ func _get_transition(_delta):
 		states.put_out_torch:
 			if $Timer.time_left == 0:
 				return states.idle
+		states.jump_on_player:
+			if $Timer.time_left == 0:
+				return states.getting_up_the_chain
 
+
+func _enter_state(new_state,previous_state):
+	if new_state != null and previous_state != null:
+		if new_state != previous_state:
+			print(states.keys()[previous_state], " --> ", states.keys()[new_state])
+			match previous_state:
+				states.jump_on_player:
+					(parent as KinematicBody2D).set_collision_mask_bit(0 , false)
+			match new_state:
+				states.winding_jump:
+					$Timer.start(0.5)
+				states.put_out_torch:
+					parent.put_out_torch()
+					$Timer.start(1)
+				states.jump_on_player:
+					(parent as KinematicBody2D).set_collision_mask_bit(0 , true)
+					$Timer.start(1.0)
 
 
 func _state_logic(delta):
@@ -66,6 +79,8 @@ func _state_logic(delta):
 			parent.get_to_torch()
 		states.put_out_torch:
 			parent.idle()
-	parent._applyVelocity(delta)
+	var col = parent._applyVelocity(delta)
 	if not state in [states.idle, states.get_to_torch, states.put_out_torch]:
 		parent.tryToSeePlayer()
+	if not state in [states.idle]:
+		parent.checkForPlayerDeath(col)

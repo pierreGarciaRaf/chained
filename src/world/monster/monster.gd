@@ -21,6 +21,7 @@ onready var magicChainRes = preload("res://src/world/magicChain/magicChain.tscn"
 export var speed = 150
 
 export var nav2DPath:NodePath
+var requiredDistForPath = 1.0
 var distJump = 32+16
 
 var nav2D:Navigation2D
@@ -57,8 +58,8 @@ func get_to_player():
 	elif has_to_change_index():
 		pathPointIndex +=1
 		pathPointIndex = min(pathPointIndex, pathToFollow.size()-1)
-	
-	velocity = speed * global_position.direction_to(pathToFollow[pathPointIndex])
+	if pathToFollow.size() > pathPointIndex:
+		velocity = speed * global_position.direction_to(pathToFollow[pathPointIndex])
 
 func jump_on_player():
 	velocity = speed * 2 * global_position.direction_to(player.global_position)
@@ -67,7 +68,7 @@ func has_to_change_path():
 	return pathToFollow == null or pathToFollow.size() <= 1 or lastPlayerPos.distance_to(player.global_position) > requiredDistance
 
 func has_to_change_index():
-	return (pathToFollow[pathPointIndex] - self.position).length() < requiredDistance
+	return (pathToFollow[pathPointIndex] - self.position).length() < requiredDistForPath
 
 func idle():
 	velocity = Vector2.ZERO
@@ -93,7 +94,9 @@ func canJumpOnPlayer():
 	return collider != null and collider == player
 
 func _applyVelocity(delta):
-	var col = self.move_and_collide(velocity * delta)
+	return self.move_and_collide(velocity * delta)
+
+func checkForPlayerDeath(col):
 	if col:
 		if col.collider.name == "player":
 			emit_signal("player_dead")

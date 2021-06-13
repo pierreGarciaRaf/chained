@@ -12,7 +12,7 @@ func _ready():
 	get_tree().paused = false
 	
 	tileMap = get_node(tileMapPath)
-	var tileMapForLightRcast :TileMap= tileMap.duplicate()
+	var tileMapForLightRcast :TileMap = tileMap.duplicate()
 	tileMap.visible = true
 	tileMapForLightRcast.visible = false
 	tileMapForLightRcast.set_collision_layer_bit(4,true)
@@ -20,6 +20,7 @@ func _ready():
 	
 	tileMapForLightRcast.show_collision = true
 	(tileMapForLightRcast).tile_set = preload("res://src/world/environment/walls&Floor/blueTilesetLightCollisions.tres")
+	tileMapForLightRcast.show_collision = false
 	tileMap.get_parent().add_child(tileMapForLightRcast)
 	
 	# Referencing key children
