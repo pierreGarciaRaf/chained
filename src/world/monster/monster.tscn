@@ -26,7 +26,7 @@
 [ext_resource path="res://src/world/monster/monstertall.sprites/monstertallfront1.tres" type="Texture" id=24]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 1.96266
+radius = 3.14727
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -40,9 +40,9 @@ animations = [ {
 "name": "jump",
 "speed": 25.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 9 ) ],
 "loop": true,
-"name": "walkingBack",
+"name": "runningBack",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 4 ) ],
@@ -50,14 +50,14 @@ animations = [ {
 "name": "runningFront",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 14 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "walkingBack",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 24 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "walkingFront",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "runningBack",
 "speed": 5.0
 } ]
 
@@ -82,7 +82,8 @@ collision_mask = 3
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 self_modulate = Color( 0.180392, 0.717647, 0.94902, 1 )
 frames = SubResource( 2 )
-animation = "walkingFront"
+animation = "jump"
+frame = 5
 
 [node name="MonsterAnimSTM" type="Node" parent="."]
 script = ExtResource( 1 )
